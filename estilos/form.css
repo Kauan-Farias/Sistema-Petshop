@@ -12,16 +12,8 @@
     width: 375px;
 }
 
-#camposenha{
-    display: block;
-    margin: 20px auto;
-    width: 375px;
-}
-
-.campopassword{
-    border-radius: 15px;
-    width: 200px;
-    background-color: rgb(123, 123, 216);
+.camposenha{
+    margin-top: 60px;
 }
 
 .campo > input{
