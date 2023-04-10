@@ -5,17 +5,39 @@
 }
 
 .campo{
-    background-color: blue;
-    padding: 2px 0px;
+    background-color: rgb(123, 123, 216);
     display: block;
     margin: 20px auto;
-    width: 400px;
+    border-radius: 15px;
+    width: 375px;
+}
+
+#camposenha{
+    display: block;
+    margin: 20px auto;
+    width: 375px;
+}
+
+.campopassword{
+    border-radius: 15px;
+    width: 200px;
+    background-color: rgb(123, 123, 216);
 }
 
 .campo > input{
+    position: relative;
     padding: 10px;
     width: 300px;
     border-radius: 15px;
     font-size: 1em;
-    border: 1px solid black;
+    border: none;
+    left: 14px;
+    top: -4px;
+}
+
+.campo  span{
+    position: relative;
+    font-size: 2em;
+    top: 6px;
+    left: 12px;
 }
