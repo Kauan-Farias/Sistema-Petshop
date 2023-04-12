@@ -40,12 +40,12 @@
 
           <div class="campo">
             <label for="animal"><span class="material-symbols-outlined">pets</span></label>
-            <input type="text" name="animal" id="animal" placeholder="Digite o tipo do seu animal">
-            <div class="option">
-              <div>Cachorro</div>
-              <div>Gato</div>
-              <div>Outro</div>
-            </div>
+            <select name="animal" id="animal" required>
+              <option selected disabled>Digite o tipo do animal</option>
+              <option value="">Cachorro</option>
+              <option value="">Gato</option>
+              <option value="">Outro</option>
+            </select>
           </div>
 
           <div class="camposenha">
@@ -62,7 +62,7 @@
               <div id="icon2" onclick="showHide2()">
               </div>
             </div>
-
+            <input type="submit" value="Cadastrar">
           </div>  
       </form>
   </main>

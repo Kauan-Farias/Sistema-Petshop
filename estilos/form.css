@@ -79,6 +79,24 @@ div#icon2.hide{
     background-size: cover;
 }
 
+input[type=submit]{
+    display: block;
+    background-color: rgb(123, 123, 216);
+    color: rgb(251, 255, 0);
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.470);
+    border: none;
+    padding: 10px;
+    width: 200px;
+    margin: 10px auto;
+    position: relative;
+    transition: 1.5s;
+}
 
-
+input[type=submit]:hover{
+    transform: translate(-5px, -5px);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.500);
+} 
 /*campo*/
