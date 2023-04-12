@@ -40,29 +40,29 @@
 
           <div class="campo">
             <label for="animal"><span class="material-symbols-outlined">pets</span></label>
-            <select name="animal" id="animal">
-              <option value="">Cachorro</option>
-              <option value="">Gato</option>
-              <option value="">Roedor</option>
-              <option value="">Coelho</option>
-              <option value="">Aves</option>
-            </select>
+            <input type="text" name="animal" id="animal" placeholder="Digite o tipo do seu animal">
+            <div class="option">
+              <div>Cachorro</div>
+              <div>Gato</div>
+              <div>Outro</div>
+            </div>
           </div>
 
           <div class="camposenha">
             <div class="campo">
               <label for="senha"><span class="material-symbols-outlined">lock_open</span></label>
               <input type="password" name="senha" id="senha" placeholder="Crie uma senha" required maxlength="12">
-              <div class="icon">
+              <div id="icon1" onclick="showHide1()">
               </div>
             </div>
 
             <div class="campo">
               <label for="senhaconfirm"><span class="material-symbols-outlined">lock</span></label>
               <input type="password" name="senhaconfirm" id="senhaconfirm" placeholder="Confirme sua senha" required maxlength="12">
-            </div>
-          </div>
+              <div id="icon2" onclick="showHide2()">
               </div>
+            </div>
+
           </div>  
       </form>
   </main>
@@ -70,9 +70,37 @@
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
   <script>
+    //Mask Plugin
     $('#cpf').mask('000.000.000-00', {reverse: false});
-    $('#phone').mask('(00) 0000-0000');
+    $('#phone').mask('(00) 00000-0000');
     $('#date').mask('00/00/0000');
+
+    //Meu
+    var password = window.document.querySelector('input#senha')
+    var passconf = window.document.querySelector('input#senhaconfirm')
+    var icon1 = window.document.querySelector('div#icon1')
+    var icon2 = window.document.querySelector('div#icon2')
+
+    function showHide1(){
+      if(password.type === 'password'){
+        password.setAttribute('type','text');
+        icon1.classList.add('hide')
+      } else {  
+        password.setAttribute('type','password');
+        icon1.classList.remove('hide')
+      }
+    }
+
+    function showHide2(){
+      if(passconf.type === 'password'){
+        passconf.setAttribute('type','text');
+        icon2.classList.add('hide')
+      } else {  
+        passconf.setAttribute('type','password');
+        icon2.classList.remove('hide')
+      }
+    }
+
   </script>
 </body>
 </html>
