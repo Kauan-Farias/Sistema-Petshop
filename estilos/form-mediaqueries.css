@@ -9,14 +9,16 @@
         background-size: contain;
         height: 600px;
         width: 50%;
-        display: inline-block;
     }
     div#cadastro{
         position: relative;
         left: -20px;
         float: right;
         width: 50%;
-        display: inline-block;
+    }
+
+    .camposenha{
+        margin-top: 90px;
     }
 }
 
@@ -29,6 +31,7 @@
         float: left;
         background: url(../imagens/form/desktop-background.png) no-repeat center center;
         background-size: cover;
+        margin-bottom: -5px;
         height: 600px;
         width: 60%;
         display: inline-block;
@@ -39,5 +42,9 @@
         float: right;
         width: 40%;
         display: inline-block;
+    }
+
+    .camposenha{
+        margin-top: 80px;
     }
 }

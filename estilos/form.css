@@ -9,6 +9,7 @@
 }
 
 /*form*/
+
 form{
     margin-top: 50px;
     width: 400px;
@@ -17,13 +18,13 @@ form{
     overflow: hidden;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.465);
     background-color: rgb(115, 115, 184);
-    transition: width 1s;
+    transition: width 1.5s;
 }
 
 div#imagebk{
     background: url(../imagens/form/mobile-background.png) center center no-repeat;
+    background-size: cover;
     height: 300px;
-    margin-bottom: -10px;
 }
 /*form*/
 
