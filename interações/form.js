@@ -9,6 +9,17 @@
     var icon1 = window.document.querySelector('div#icon1');
     var icon2 = window.document.querySelector('div#icon2');
 
+    function confirmarSenha(){
+      const senha = document.querySelector('input[name=senha]')
+      const confirma = document.querySelector('input[name=confirmar]')
+
+      if(confirma.value === senha.value){
+        confirma.setCustomValidity('')
+      } else {
+        confirma.setCustomValidity('Senhas Diferentes')
+      }
+    }
+
     function showHide1(){
       if(password.type === 'password'){
         password.setAttribute('type','text');
