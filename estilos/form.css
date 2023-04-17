@@ -9,24 +9,21 @@
 }
 
 /*form*/
-main{
+form{
     margin-top: 50px;
     width: 400px;
     margin: 50px auto;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.465);
+    background-color: rgb(115, 115, 184);
+    transition: width 1s;
 }
 
 div#imagebk{
-    background: url(../imagens/form/mobile-background.png) center center;
+    background: url(../imagens/form/mobile-background.png) center center no-repeat;
     height: 300px;
-    width: 400px;
-}
-
-form{
-    background-color: rgb(115, 115, 184);
-    padding: 15px;
+    margin-bottom: -10px;
 }
 /*form*/
 
