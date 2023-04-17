@@ -79,7 +79,7 @@ div#icon2.hide{
     background-size: cover;
 }
 
-input[type=submit]{
+input#enviar{
     display: block;
     background-color: rgb(123, 123, 216);
     color: rgb(251, 255, 0);
@@ -95,7 +95,7 @@ input[type=submit]{
     transition: 1.5s;
 }
 
-input[type=submit]:hover{
+input#enviar:hover{
     transform: translate(-5px, -5px);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.500);
 } 
