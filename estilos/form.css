@@ -4,13 +4,31 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
+/*form*/
 main{
-    border: 1px solid black;
     margin-top: 50px;
     width: 400px;
     margin: 50px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.465);
 }
 
+div#imagebk{
+    background: url(../imagens/form/mobile-background.png) center center;
+    height: 300px;
+    width: 400px;
+}
+
+form{
+    background-color: rgb(115, 115, 184);
+    padding: 15px;
+}
+/*form*/
 
 /*campo*/
 .campo{
