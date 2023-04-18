@@ -83,13 +83,11 @@ div#imagebk{
     cursor: pointer;
     transform: translate(335px, -35px);
     position: absolute;
-    background-color: aqua;
 }
 
 .hide{/*classe para mudar imagem para trocar image de show para hide*/
     background: url(../imagens/form/hide.png);
     background-size: cover;
-    background-color: black;
 }
 
 
