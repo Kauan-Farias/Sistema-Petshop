@@ -111,4 +111,34 @@ input#enviar:hover{
     transform: translate(-5px, -5px);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.500);
 } 
+
+.campo-radio{
+    background-color: rgb(123, 123, 216);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.400);
+    border-radius: 10px;
+    width: 145px;
+    padding: 10px;
+    margin: auto;
+}
+.campo-radio span{
+    position: relative;
+    font-size: 2em;
+    font-weight: bold;
+    margin-right: 10px;
+    top: 8px;
+    left: 12px;
+}
+
+.campo-radio span#female{
+    color: rgb(255, 0, 247);
+}
+
+.campo-radio span#male{
+    color: rgb(0, 68, 255);
+}
+
+div.campo-radio div#sexo{
+    position: relative;
+    top: -5px;
+}
 /*campo*/

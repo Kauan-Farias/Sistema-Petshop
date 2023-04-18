@@ -11,20 +11,37 @@
 <body>
     <form>
         <div class="campo">
+            <label for="name"><span class="material-symbols-outlined">sound_detection_dog_barking</span></label>
+            <input type="text" name="name" id="name" placeholder="Digite o nome do seu animal">
+        </div>
+        <div class="campo">
             <label for="animal"><span class="material-symbols-outlined">pets</span></label>
             <select name="animal" id="animal" required>
               <option selected disabled>Selecione o porte do animal</option>
               <option value="P">Pequeno</option>
               <option value="M">Médio</option>
               <option value="G">Grande</option>
-              <option value="GG">Gigantes</option>
+              <option value="GG">Gigante</option>
             </select>
         </div>
-        <div class="campo">
-
+        <div class="campo-radio">
+            <div id="sexo">
+                <label for="mas"><span class="material-symbols-outlined" id="male">male</span></label>
+                <input type="radio" name="sexo" id="mas" value="M">
+                <label for="fem"><span class="material-symbols-outlined" id="female">female</span></label>
+                <input type="radio" name="sexo" id="fem" value="F">
+            </div>
         </div>
         <div class="campo">
-
+            <label for="servico"><span class="material-symbols-outlined">pets</span></label>
+            <select name="servico" id="servico" required>
+              <option selected disabled>Selecione o serviço</option>
+              <option value="P">Banho</option>
+              <option value="M">Banho + Tosa</option>
+              <option value="G">Tosa</option>
+              <option value="GG">Consulta</option>
+              <option value="GG">Consulta</option>
+            </select>
         </div>
         <div class="campo">
 
