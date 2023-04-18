@@ -91,7 +91,7 @@ div#imagebk{
 }
 
 
-input#enviar{
+input.enviar{
     display: block;
     background-color: rgb(123, 123, 216);
     color: rgb(251, 255, 0);
@@ -107,7 +107,7 @@ input#enviar{
     transition: 1.5s;
 }
 
-input#enviar:hover{
+input.enviar:hover{
     transform: translate(-5px, -5px);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.500);
 } 
@@ -140,5 +140,16 @@ input#enviar:hover{
 div.campo-radio div#sexo{
     position: relative;
     top: -5px;
+}
+
+div#funcionario{
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    width: 300px;
+    border-radius: 15px;
+    left: 14px;
+    top: -4px;
+    background-color: white;
 }
 /*campo*/

@@ -12,8 +12,9 @@
     <form>
         <div class="campo">
             <label for="name"><span class="material-symbols-outlined">sound_detection_dog_barking</span></label>
-            <input type="text" name="name" id="name" placeholder="Digite o nome do seu animal">
+            <input type="text" name="name" id="name" placeholder="Digite o nome do seu animal" required>
         </div>
+
         <div class="campo">
             <label for="animal"><span class="material-symbols-outlined">pets</span></label>
             <select name="animal" id="animal" required>
@@ -24,31 +25,38 @@
               <option value="GG">Gigante</option>
             </select>
         </div>
+
         <div class="campo-radio">
             <div id="sexo">
                 <label for="mas"><span class="material-symbols-outlined" id="male">male</span></label>
-                <input type="radio" name="sexo" id="mas" value="M">
+                <input type="radio" name="sexo" id="mas" value="M" checked>
                 <label for="fem"><span class="material-symbols-outlined" id="female">female</span></label>
                 <input type="radio" name="sexo" id="fem" value="F">
             </div>
         </div>
+
+        <div class="campo">
+            <label for="data"><span class="material-symbols-outlined">calendar_month</span></label>
+            <input type="date" name="data" id="data" required>
+        </div>
+
         <div class="campo">
             <label for="servico"><span class="material-symbols-outlined">pets</span></label>
             <select name="servico" id="servico" required>
               <option selected disabled>Selecione o serviço</option>
-              <option value="P">Banho</option>
-              <option value="M">Banho + Tosa</option>
-              <option value="G">Tosa</option>
-              <option value="GG">Consulta</option>
-              <option value="GG">Consulta</option>
+              <option value="B">Banho</option>
+              <option value="B+T">Banho + Tosa</option>
+              <option value="T">Tosa</option>
+              <option value="C">Consulta veterinária</option>
             </select>
         </div>
-        <div class="campo">
 
-        </div>
         <div class="campo">
-
+            <label for="name"><span class="material-symbols-outlined">person</span></label>
+            <div id="funcionario">Responsável pelo serviço</div>
         </div>
+
+        <input type="submit" value="Agendar" class="enviar">
     </form>
 </body>
 </html>
