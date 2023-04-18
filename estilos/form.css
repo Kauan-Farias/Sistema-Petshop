@@ -75,7 +75,7 @@ div#imagebk{
     top: -4px;
 }
 
-div#icon1, #icon2{
+#icon1, #icon2{
     background: url(../imagens/form/show.png);
     background-size: cover;
     height: 25px;
@@ -83,17 +83,15 @@ div#icon1, #icon2{
     cursor: pointer;
     transform: translate(335px, -35px);
     position: absolute;
+    background-color: aqua;
 }
 
-div#icon1.hide{
+.hide{/*classe para mudar imagem para trocar image de show para hide*/
     background: url(../imagens/form/hide.png);
     background-size: cover;
+    background-color: black;
 }
 
-div#icon2.hide{
-    background: url(../imagens/form/hide.png);
-    background-size: cover;
-}
 
 input#enviar{
     display: block;

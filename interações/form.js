@@ -4,46 +4,46 @@
     $('#date').mask('00/00/0000');
 
     //Meu
-    var password = window.document.querySelector('input#senha');
-    var passconf = window.document.querySelector('input#senhaconfirm');
-    var icon1 = window.document.querySelector('div#icon1');
-    var icon2 = window.document.querySelector('div#icon2');
+    const password = window.document.querySelector('input#senha');
+    const passconf = window.document.querySelector('input#confirmar');
+    const icon1 = window.document.getElementById('div1')
+    const icon2 = window.document.getElementById('div2')
 
     function confirmarSenha(){
-      const senha = document.querySelector('input[name=senha]')
-      const confirma = document.querySelector('input[name=confirmar]')
-
-      if(confirma.value === senha.value){
-        confirma.setCustomValidity('')
+      if(passconf.value === password.value){
+        passconf.setCustomValidity('')
       } else {
-        confirma.setCustomValidity('Senhas Diferentes')
+        passconf.setCustomValidity('Senhas Diferentes')
       }
     }
 
     function showHide1(){
       if(password.type === 'password'){
-        password.setAttribute('type','text');
-        passconf.setAttribute('type','text');
-        icon1.classList.add('hide');
-        icon2.classList.add('hide');
-      } else {  
-        password.setAttribute('type','password');
-        passconf.setAttribute('type','password');
-        icon1.classList.remove('hide');
-        icon2.classList.remove('hide');
+        password.setAttribute('type','text')
+        passconf.setAttribute('type','text')
+        icon1.classList.add('hide')
+        icon2.classList.add('hide')
+      } else {
+        password.setAttribute('type','password')
+        passconf.setAttribute('type','password')
+        icon1.classList.remove('hide')
+        icon2.classList.remove('hide')
       }
     }
 
     function showHide2(){
       if(passconf.type === 'password'){
-        passconf.setAttribute('type','text');
-        password.setAttribute('type','text');
-        icon2.classList.add('hide');
-        icon1.classList.add('hide');
-      } else {  
-        passconf.setAttribute('type','password');
-        password.setAttribute('type','text');
-        icon2.classList.remove('hide');
-        icon1.classList.remove('hide');
-      }
+      passconf.setAttribute('type','text')
+      password.setAttribute('type','text')
+      icon2.classList.add('hide')
+      icon1.classList.add('hide')
+    } else {
+      password.setAttribute('type','password')
+      passconf.setAttribute('type','password')
+      icon2.classList.remove('hide')
+      icon1.classList.remove('hide')
     }
+  }
+
+
+   
