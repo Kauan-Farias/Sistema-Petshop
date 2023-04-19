@@ -7,13 +7,12 @@
         float: left;
         background: url(../imagens/form/tablet-background.png) no-repeat;
         background-size: contain;
-        height: 600px;
+        height: 670px;
         width: 50%;
     }
 
     div#cadastro{
         position: relative;
-        left: -20px;
         float: right;
         width: 50%;
     }
@@ -31,7 +30,7 @@
         position: relative;
         left: -20px;
         top: 10px;
-        margin: 0px;
+        margin: 20px 0px;
         float: right;
         width: 50%;
     }
@@ -51,7 +50,7 @@
         background: url(../imagens/form/desktop-background.png) no-repeat center center;
         background-size: cover;
         margin-bottom: -5px;
-        height: 600px;
+        height: 660px;
         width: 60%;
     }
 
@@ -73,7 +72,7 @@
     div#cadastro-servico{
         position: relative;
         left: 5px;
-        margin: 0px;
+        margin: 20px 0px;
         float: right;
         width: 40%;
     }
