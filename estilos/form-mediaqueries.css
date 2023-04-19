@@ -3,6 +3,10 @@
         width: 900px;
     }
 
+    form#login{
+        width: 400px;
+    }
+
     div#imagebk{
         float: left;
         background: url(../imagens/form/tablet-background.png) no-repeat;
@@ -44,6 +48,11 @@
     form{
         width: 1200px;
     }
+
+    form#login{
+        width: 400px;
+    }
+
 
     div#imagebk{
         float: left;
