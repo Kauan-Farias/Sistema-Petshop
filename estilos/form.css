@@ -10,6 +10,17 @@
 
 /*form*/
 
+h2{
+    background-color: rgb(217, 220, 24);
+    color: rgb(115, 115, 184);
+    padding: 10px;
+    width: 200px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.352);
+    text-align: center;
+    border-radius: 10px;
+    margin: auto;
+}
+
 form{
     margin-top: 50px;
     width: 400px;
@@ -31,6 +42,10 @@ div#imagebk-servico{
     background: url(../imagens/form/mobile-background-sevico.png) center center no-repeat;
     background-size: cover;
     height: 300px;
+}
+
+div#cadastro-servico{
+    margin: 10px;
 }
 /*form*/
 
