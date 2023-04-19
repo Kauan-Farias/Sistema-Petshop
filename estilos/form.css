@@ -44,7 +44,7 @@ div#imagebk-servico{
     height: 300px;
 }
 
-div#cadastro-servico, div#cadastro{
+div#cadastro-servico, div#cadastro, div#entrar{
     margin: 10px 0px;
 }
 /*form*/
@@ -61,6 +61,22 @@ div#cadastro-servico, div#cadastro{
 
 .camposenha{
     margin-top: 60px;
+}
+
+.camposenha-entrar{
+    margin: 0px;
+}
+
+.camposenha-entrar .campo{
+    margin: 0px auto 20px;
+}
+
+div#esqueci-senha a{
+    display: block;
+    text-align: right;
+    margin-right: 20px;
+    font-size: 0.8em;
+    color: rgb(251, 255, 0);
 }
 
 .campo > input{
