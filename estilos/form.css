@@ -26,6 +26,12 @@ div#imagebk{
     background-size: cover;
     height: 300px;
 }
+
+div#imagebk-servico{
+    background: url(../imagens/form/mobile-background-sevico.png) center center no-repeat;
+    background-size: cover;
+    height: 300px;
+}
 /*form*/
 
 /*campo*/
@@ -116,7 +122,7 @@ input.enviar:hover{
     background-color: rgb(123, 123, 216);
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.400);
     border-radius: 10px;
-    width: 145px;
+    width: 142px;
     padding: 10px;
     margin: auto;
 }

@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../estilos/form.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="../estilos/form-mediaqueries.css">
     <title>Happy Pet</title>
 </head>
 <body>
     <form>
+        <div id="imagebk-servico">
+            <!--Imagem vai no CSS-->
+        </div>
+        <div id="cadastro-servico">
         <div class="campo">
             <label for="name"><span class="material-symbols-outlined">sound_detection_dog_barking</span></label>
             <input type="text" name="name" id="name" placeholder="Digite o nome do seu animal" required>
@@ -41,7 +46,7 @@
         </div>
 
         <div class="campo">
-            <label for="servico"><span class="material-symbols-outlined">pets</span></label>
+            <label for="servico"><span class="material-symbols-outlined">medical_services</span></label>
             <select name="servico" id="servico" required>
               <option selected disabled>Selecione o serviço</option>
               <option value="B">Banho</option>
@@ -57,6 +62,7 @@
         </div>
 
         <input type="submit" value="Agendar" class="enviar">
+        </div>
     </form>
 </body>
 </html>

@@ -3,7 +3,7 @@
     $('#phone').mask('(00) 00000-0000');
     $('#date').mask('00/00/0000');
 
-    //Meu
+    //Password
     const password = window.document.querySelector('input#senha');
     const passconf = window.document.querySelector('input#confirmar');
     const icon1 = window.document.querySelector('div#icon1');
@@ -44,6 +44,3 @@
       icon1.classList.remove('hide')
     }
   }
-
-
-   
