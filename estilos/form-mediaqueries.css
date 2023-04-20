@@ -7,6 +7,10 @@
         width: 400px;
     }
 
+    form#funcionario{
+        width: 400px;
+    }
+
     div#imagebk{
         float: left;
         background: url(../imagens/form/tablet-background.png) no-repeat;
@@ -50,6 +54,10 @@
     }
 
     form#login{
+        width: 400px;
+    }
+
+    form#funcionario{
         width: 400px;
     }
 
