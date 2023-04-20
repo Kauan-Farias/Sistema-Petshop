@@ -14,11 +14,8 @@
   <header>
 
   </header>
-  <form>
-      <div id="imagebk">
-        <!--Imagem vai no CSS-->
-      </div>
-      <div id="cadastro">
+  <form id="funcionario">
+      <div id="cadastro-funcionario">
         <h2>Cadastrar Funcionario</h2>
           <div class="campo">
             <label for="name"><span class="material-symbols-outlined">person</span></label>
@@ -31,7 +28,7 @@
           </div>
           
           <div class="campo">
-            <label for="cep"><span class="material-symbols-outlined">person</span></label>
+            <label for="cep"><span class="material-symbols-outlined">home</span></label>
             <input type="text" name="cep" id="cep" class="cep" placeholder="Digite o CEP do funcionário" required>   
           </div>
 
@@ -49,6 +46,7 @@
             <label for="phone"><span class="material-symbols-outlined">phone_iphone</span></label>
             <input type="tel" name="phone" id="phone" placeholder="(00) 00000-0000" required>
           </div>
+          <input type="submit" value="Enviar dados" class="enviar">
       </div>
   </form>
   <!--https://igorescobar.github.io/jQuery-Mask-Plugin/docs.html-->
