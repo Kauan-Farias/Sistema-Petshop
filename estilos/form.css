@@ -44,7 +44,7 @@ div#imagebk-servico{
     height: 300px;
 }
 
-div#cadastro-servico, div#cadastro, div#entrar{
+div#cadastro-servico,div#cadastro-funcionario , div#cadastro, div#entrar{
     margin: 10px 0px;
 }
 /*form*/
