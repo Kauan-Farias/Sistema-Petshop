@@ -7,8 +7,8 @@
     //Password
     const password = window.document.querySelector('input#senha');
     const passconf = window.document.querySelector('input#confirmar');
-    const icon1 = window.document.querySelector('div#icon1');
-    const icon2 = window.document.querySelector('div#icon2');
+    const icon1 = window.document.querySelector('div.icon1');
+    const icon2 = window.document.querySelector('div.icon2');
 
     function confirmarSenha(){
       if(passconf.value === password.value){
