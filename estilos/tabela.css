@@ -22,7 +22,6 @@ header{
 }
 
 header > h1{
-    color: var(--cor-principal);
     text-align: center;
 }
 
@@ -33,6 +32,7 @@ header > h1{
 #hamburger-menu{
     position: absolute;
     top: 6px;
+    left: 63px;
     cursor: pointer;
     border-radius: 10px;
     padding: 10px;
@@ -62,6 +62,14 @@ div#itens li{
     border-bottom: 1px solid black;
     padding: 5px;
     text-align: center;
+}
+
+div#itens li:hover{
+    background-color: rgb(166, 166, 236);
+}
+
+.select{
+    background-color: rgb(42, 42, 144);
 }
 /*Menu*/
 
