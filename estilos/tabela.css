@@ -18,11 +18,11 @@ body{
 /*Top*/
 
 header{
-    background-color: var(--cor-secundaria);
     padding: 10px;
 }
 
 header > h1{
+    color: var(--cor-principal);
     text-align: center;
 }
 
@@ -40,16 +40,16 @@ header > h1{
 }
 
 #hamburger-menu:hover{
-    background-color: rgb(75, 164, 247);
+    background-color: var(--cor-principal);
 }
 
 .menuclick{
-    background-color: rgb(75, 164, 247);
+    background-color: var(--cor-principal);
 }
 
 div#itens{
     position: absolute;
-    background-color: rgb(75, 164, 247);
+     background-color: var(--cor-principal);
     display: none;
 }
 
@@ -91,13 +91,13 @@ td, th{
 
 th{
     position: sticky;
-    background-color:rgb(123, 123, 216);
+    background-color:var(--cor-principal);
     top: -1px;
     color: white;
 }
 
 tr:nth-child(odd){
-    background-color: rgb(75, 164, 247);
+    background-color:var(--cor-principal);
 }
 /*Tabela*/
 
