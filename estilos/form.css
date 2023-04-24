@@ -112,7 +112,7 @@ div#esqueci-senha a{
     top: -4px;
 }
 
-#icon1, #icon2{
+.show1, .show2{
     background: url(../imagens/form/show.png);
     background-size: cover;
     height: 25px;
