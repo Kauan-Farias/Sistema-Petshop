@@ -34,5 +34,32 @@ btnExp.addEventListener('click', function(){
 })
 
 //clicando para aparecer itens escondidos
+function areaHide1(){
+    let itemHide = document.querySelector('div.item-hide1')
 
-function areaHide()
+    if(itemHide.style.display == 'none'){
+        itemHide.style.display = 'block'
+    } else{
+        itemHide.style.display = 'none'
+    }
+}
+
+function areaHide2(){
+    let itemHide = document.querySelector('div.item-hide2')
+    
+    if(itemHide.style.display == 'none'){
+        itemHide.style.display = 'block'
+    } else{
+        itemHide.style.display = 'none'
+    }
+}
+
+function areaHide3(){
+    let itemHide = document.querySelector('div.item-hide3')
+    
+    if(itemHide.style.display == 'none'){
+        itemHide.style.display = 'block'
+    } else{
+        itemHide.style.display = 'none'
+    }
+}

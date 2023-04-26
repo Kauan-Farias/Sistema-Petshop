@@ -7,6 +7,7 @@
 
 body{
     height: 100vh;
+    padding-left: 64px;
 }
 
 nav.menu-lateral{
@@ -29,7 +30,7 @@ nav.menu-lateral.expandir{
 
 .btn-expandir{
     width: 100%;
-    margin-left: 5px;
+    margin: -30px 0px 40px 5px;
 }
 
 .btn-expandir > span{
@@ -47,12 +48,21 @@ ul li.item-menu{
     transition: 0.5s;
 }
 
+ul li.item-menu-second{
+    transition: 0.5s;
+}
+
+nav.menu-lateral.expandir .item-menu-second{
+    margin-left: 48px;
+}
+
 ul li.ativo{
     background-color: brown;
 }
 
-ul li.hide1{
+div.item-hide1, div.item-hide2, div.item-hide3{
     display: none;
+    margin: -35px 0px 40px;
 }
 
 ul li.item-menu:hover{
@@ -77,7 +87,7 @@ ul li.item-menu-second a{
     text-decoration: none;
     padding: 10px 5px;
     display: flex;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     line-height: 30px;
 }
 
