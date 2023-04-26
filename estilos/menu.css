@@ -15,9 +15,9 @@ body{
 nav.menu-lateral{
     width: 60px;
     height: 100%;
-    background-color: rgb(20, 19, 19);
+    background-color: var(--cor-terciaria);
     padding: 40px 0px 40px 5px;
-    box-shadow: 3px 0px 0px brown;
+    box-shadow: 3px 0px 0px var(--cor-secundaria);
     
     position: fixed;
     top: 0;
@@ -59,7 +59,7 @@ nav.menu-lateral.expandir .item-menu-second{
 }
 
 ul li.ativo{
-    background-color: brown;
+    background-color: var(--cor-secundaria);
 }
 
 div.item-hide1, div.item-hide2, div.item-hide3{
@@ -68,11 +68,11 @@ div.item-hide1, div.item-hide2, div.item-hide3{
 }
 
 ul li.item-menu:hover{
-    background-color: brown;
+    background-color: var(--cor-secundaria);
 }
 
 ul li.item-menu-second:hover{
-    background-color: brown;
+    background-color: var(--cor-secundaria);
 }
 
 ul li.item-menu a{

@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+:root{
+    --cor-principal:  rgb(123, 123, 216);
+    --cor-secundaria: #fdcc2d;
+    --cor-terciaria: rgb(85, 85, 225);
+}

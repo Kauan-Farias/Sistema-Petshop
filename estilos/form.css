@@ -11,7 +11,7 @@
 /*form*/
 
 h2{
-    background-color: rgb(251, 255, 0);
+    background-color:   var(--cor-secundaria);
     color: rgb(115, 115, 184);
     padding: 10px;
     width: 200px;
@@ -28,7 +28,7 @@ form{
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.465);
-    background-color: rgb(115, 115, 184);
+    background-color: var(--cor-principal);
     transition: width 1.5s;
 }
 
@@ -51,7 +51,7 @@ div#cadastro-servico, div#cadastro-funcionario , div#cadastro, div#entrar{
 
 /*campo*/
 .campo{
-    background-color: rgb(123, 123, 216);
+    background-color: var(--cor-principal);
     display: block;
     margin: 20px auto;
     border-radius: 15px;
@@ -76,7 +76,7 @@ div#esqueci-senha a{
     text-align: right;
     margin: 0px 20px 5px 0px;
     font-size: 0.8em;
-    color: rgb(251, 255, 0);
+    color: var(--cor-secundaria);
 }
 
 .campo > input{
@@ -96,7 +96,7 @@ div#esqueci-senha a{
     font-size: 2em;
     top: 6px;
     left: 12px;
-    color: rgb(251, 255, 0);
+    color: var(--cor-secundaria);
 }
 
 .campo > select{
@@ -130,8 +130,8 @@ div#esqueci-senha a{
 
 input.enviar{
     display: block;
-    background-color: rgb(123, 123, 216);
-    color: rgb(251, 255, 0);
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
     cursor: pointer;
     font-size: 1em;
     border-radius: 10px;
@@ -150,7 +150,7 @@ input.enviar:hover{
 } 
 
 .campo-radio{
-    background-color: rgb(123, 123, 216);
+    background-color: var(--cor-principal);
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.400);
     border-radius: 10px;
     width: 142px;
