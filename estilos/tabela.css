@@ -1,59 +1,48 @@
 @charset "UTF-8";
 
 *{
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-::-webkit-scrollbar{
-    display: none;
-}
-
-body{
-    background-color:rgb(207, 207, 255);
-}
-
-/*Top*/
-
-header{
-    padding: 10px;
-}
-
-header > h1{
-    text-align: center;
-}
-
-/*Top*/
 
 /*Menu*/
 nav.menu-hide{
     position: absolute;
-    width: 150px;
-    transform: translate(0px);
+    background-color: black;
+    width: 180px;
 }
 
-nav.menu-show{
-    transform: translate(0px);
-}
-
-#hamburger-menu{
+nav.menu-hide  h2{
+    padding: 5px;
     color: white;
-    padding: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.menuclick{
-    background-color: var(--cor-principal);
-    width: 150px;
+    text-align: center;
 }
 
 div#itens{
-    position: absolute;
-    background-color: var(--cor-principal);
-    display: block;
+    width: 180px;
+}
+
+div#itens ul{
+    list-style-type: none;
+}
+
+div#itens li{
+   text-decoration: none;
+   text-align: center;
+   background-color: rgb(67, 137, 130);
+   border-bottom: 1px solid rgb(255, 255, 255);
+   cursor: pointer;
+   color: white;
+   padding: 10px
+}
+
+#cadastrar-dados1, #cadastrar-dados2, #cadastrar-dados3{
+    display: none;
+}
+
+div#itens li:hover{
+    background-color: aquamarine;
 }
 
 div#itens a{
@@ -61,25 +50,10 @@ div#itens a{
     color: white;
 }
 
-div#itens li{
-    border-bottom: 1px solid black;
-    padding: 10px;
-    width: 150px;
-    text-align: center;
-}
-
-div#itens li > span{
+div#itens span{
     display: block;
     font-size: 2em;
-    color: white;
-}
-
-div#itens li:hover{
-    background-color: rgb(166, 166, 236);
-}
-
-.select{
-    background-color: rgb(42, 42, 144);
+    text-align: center;
 }
 /*Menu*/
 

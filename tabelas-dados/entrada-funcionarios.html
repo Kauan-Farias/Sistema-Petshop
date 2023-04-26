@@ -11,15 +11,28 @@
 </head>
 <body>
     <header>
-        <h1>Dados</h1>
+        <span id="hamburger-menu" class="material-symbols-outlined" onclick="menu()">menu</span>
     </header>
-    <span id="hamburger-menu" class="material-symbols-outlined" onclick="menu()">menu</span>
     <nav class="menu-hide">
+        <h2>Pet Happy<span class="material-symbols-outlined">pets</span></h2>
         <div id="itens">
             <ul>
                 <li><span class="material-symbols-outlined">home</span><a href="#">Início</a></li>
-                <li><span class="material-symbols-outlined">groups</span><a href="entrada-client.html">Clientes</a></li>
-                <li><span class="material-symbols-outlined">group</span><a href="entrada-servicos.html">Serviços</a></li>
+                <li onclick="areaDados1()"><span class="material-symbols-outlined">groups</span><a href="#">Clientes</a></li>
+                <ul id="cadastrar-dados1">
+                    <li><a href="#"></a>Cadastrar</li>
+                    <li><a href="#"></a>Dados</li>
+                </ul>
+                <li onclick="areaDados2()"><span class="material-symbols-outlined">pets</span><a href="#">Pets</a></li>
+                <ul id="cadastrar-dados2">
+                    <li><a href="#"></a>Cadastrar</li>
+                    <li><a href="#"></a>Dados</li>
+                </ul>
+                <li onclick="areaDados3()"><span class="material-symbols-outlined">group</span><a href="#">Serviços</a></li>
+                <ul id="cadastrar-dados3">
+                    <li><a href="#"></a>Cadastrar</li>
+                    <li><a href="#"></a>Dados</li>
+                </ul>
                 <li class="select"><span class="material-symbols-outlined">Badge</span><a href="#">Funcionários</a></li>
             </ul>
         </div>
