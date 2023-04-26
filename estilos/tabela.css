@@ -8,9 +8,13 @@
 
 /*Menu*/
 nav.menu-hide{
+    display: none;
     position: absolute;
     background-color: black;
     width: 180px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.548);
+    border-radius: 0px 10px 10px 0px;
+    overflow: hidden;
 }
 
 nav.menu-hide  h2{

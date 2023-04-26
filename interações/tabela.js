@@ -1,3 +1,11 @@
+function menu(){
+    let menu = window.document.querySelector('nav.menu-hide')
+    if(menu.style.display == 'none'){
+        menu.style.display = 'block'
+    } else {
+        menu.style.display = 'none'
+    }
+}
 
 function areaDados1(){
     let area1 = window.document.getElementById('cadastrar-dados1')
