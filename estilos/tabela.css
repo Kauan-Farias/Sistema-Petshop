@@ -28,29 +28,32 @@ header > h1{
 /*Top*/
 
 /*Menu*/
-
-#hamburger-menu{
+nav.menu-hide{
     position: absolute;
-    top: 6px;
-    left: 63px;
-    cursor: pointer;
-    border-radius: 10px;
-    padding: 10px;
-    transition: 1s;
+    width: 150px;
+    transform: translate(0px);
 }
 
-#hamburger-menu:hover{
-    background-color: var(--cor-principal);
+nav.menu-show{
+    transform: translate(0px);
+}
+
+#hamburger-menu{
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: 1s;
 }
 
 .menuclick{
     background-color: var(--cor-principal);
+    width: 150px;
 }
 
 div#itens{
     position: absolute;
-     background-color: var(--cor-principal);
-    display: none;
+    background-color: var(--cor-principal);
+    display: block;
 }
 
 div#itens a{
@@ -60,8 +63,15 @@ div#itens a{
 
 div#itens li{
     border-bottom: 1px solid black;
-    padding: 5px;
+    padding: 10px;
+    width: 150px;
     text-align: center;
+}
+
+div#itens li > span{
+    display: block;
+    font-size: 2em;
+    color: white;
 }
 
 div#itens li:hover{

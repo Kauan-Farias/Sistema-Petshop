@@ -1,13 +1,8 @@
 
 function menu(){
-    let itens = window.document.getElementById('itens')
-    let menu = window.document.getElementById('hamburger-menu')
+    let menu = window.document.querySelector('va')
     
-    if(itens.style.display == 'none'){
-        itens.style.display = 'block'
-        menu.classList.add('menuclick')
-    } else {
-        itens.style.display = 'none'
-        menu.classList.remove('menuclick')
-    }
+    menu.classList.add('menu-show')
+    console.log('1')
+    
 }
