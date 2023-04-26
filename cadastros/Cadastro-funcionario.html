@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/form.css">
+    <link rel="stylesheet" href="../estilos/form-mediaqueries.css">
+    <link rel="stylesheet" href="../estilos/geral.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="../estilos/menu.css">
+    <title>Happy Pet</title>
+</head>
+<body>
+    <nav class="menu-lateral">
+      <div class="btn-expandir">
+          <span class="material-symbols-outlined" id="btn-exp">menu</span>
+      </div>
+      
+      <ul>
+          <li class="item-menu">
+              <a href="../index.html">
+                  <span class="material-symbols-outlined icon" id>home</span>
+                  <span class="txt-link">Início</span>
+              </a>
+          </li>
+
+          <li class="item-menu" onclick="areaHide1()">
+              <a href="#">
+                  <span class="material-symbols-outlined icon">person</span>
+                  <span class="txt-link">Cliente</span>
+              </a>
+          </li>
+        <div class="item-hide1">  
+            <li class="item-menu-second">
+                <a href="#">
+                    <span class="material-symbols-outlined icon">person</span>
+                    <span class="txt-link">Cadastrar</span>
+                </a>
+            </li>
+            <li class="item-menu-second">
+                <a href="#">
+                    <span class="material-symbols-outlined icon">account_balance_wallet</span>
+                    <span class="txt-link">Dados</span>
+                </a>
+            </li>
+        </div>
+
+          <li class="item-menu" onclick="areaHide2()">
+              <a href="#">
+                  <span class="material-symbols-outlined icon">pets</span>
+                  <span class="txt-link">Pets</span>
+              </a>
+          </li>
+          <div class="item-hide2">  
+              <li class="item-menu-second">
+                  <a href="#">
+                      <span class="material-symbols-outlined icon">pets</span>
+                      <span class="txt-link">Cadastrar</span>
+                  </a>
+              </li>
+              <li class="item-menu-second">
+                  <a href="#">
+                      <span class="material-symbols-outlined icon">account_balance_wallet</span>
+                      <span class="txt-link">Dados</span>
+                  </a>
+              </li>
+          </div>
+
+          <li class="item-menu ativo" onclick="areaHide3()">
+              <a href="#">
+                  <span class="material-symbols-outlined icon">group</span>
+                  <span class="txt-link">Funcionários</span>
+              </a>
+          </li>
+          <div class="item-hide3">  
+              <li class="item-menu-second ativo">
+                  <a href="cadastros/Cadastro-funcionario.html">
+                      <span class="material-symbols-outlined icon">group</span>
+                      <span class="txt-link">Cadastrar</span>
+                  </a>
+              </li>
+              <li class="item-menu-second">
+                  <a href="#">
+                      <span class="material-symbols-outlined icon">account_balance_wallet</span>
+                      <span class="txt-link">Dados</span>
+                  </a>
+              </li>
+          </div>
+      </ul>  
+  </nav>
+  <form id="funcionario">
+      <div id="cadastro-funcionario">
+        <h2>Cadastrar Funcionario</h2>
+          <div class="campo">
+            <label for="name"><span class="material-symbols-outlined">person</span></label>
+            <input type="text" name="name" id="name" class="name" placeholder="Digite o nome completo do funcionário" required>   
+          </div>
+
+          <div class="campo">
+            <label for="cpf"><span class="material-symbols-outlined">person</span></label>
+            <input type="text" name="cpf" id="cpf" class="cpf" placeholder="Digite o CPF do funcionário" required>
+          </div>
+          
+          <div class="campo">
+            <label for="cep"><span class="material-symbols-outlined">home</span></label>
+            <input type="text" name="cep" id="cep" class="cep" placeholder="Digite o CEP do funcionário" required>   
+          </div>
+
+          <div class="campo">
+            <label for="address"><span class="material-symbols-outlined">home</span></label>
+            <input type="text" name="address" id="address" placeholder="Digite o endereço do funcionário">
+        </div>
+
+          <div class="campo">
+            <label for="data-nascimento"><span class="material-symbols-outlined">calendar_month</span></label>
+            <input type="date" name="data-nascimento" id="data-nascimento" class="place" required>
+          </div>
+
+          <div class="campo">
+            <label for="phone"><span class="material-symbols-outlined">phone_iphone</span></label>
+            <input type="tel" name="phone" id="phone" class="phone" placeholder="(00) 00000-0000" required>
+          </div>
+          <input type="submit" value="Enviar dados" class="enviar">
+      </div>
+  </form>
+  <!--https://igorescobar.github.io/jQuery-Mask-Plugin/docs.html-->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+  <script src="../interações/form.js"></script>
+  <script src="../interações/menu.js"></script>
+</body>
+</html>
