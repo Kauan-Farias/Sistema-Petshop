@@ -1,0 +1,110 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+}
+
+nav.menu-lateral{
+    width: 60px;
+    height: 100%;
+    background-color: rgb(20, 19, 19);
+    padding: 40px 0px 40px 5px;
+    box-shadow: 3px 0px 0px brown;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+nav.menu-lateral.expandir{
+    width: 300px;
+}
+
+.btn-expandir{
+    width: 100%;
+    margin-left: 5px;
+}
+
+.btn-expandir > span{
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+nav.menu-lateral > ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu{
+    transition: 0.5s;
+}
+
+ul li.ativo{
+    background-color: brown;
+}
+
+ul li.hide1{
+    display: none;
+}
+
+ul li.item-menu:hover{
+    background-color: brown;
+}
+
+ul li.item-menu-second:hover{
+    background-color: brown;
+}
+
+ul li.item-menu a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 5px;
+    display: flex;
+    margin-bottom: 40px;
+    line-height: 40px;
+}
+
+ul li.item-menu-second a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 5px;
+    display: flex;
+    margin-bottom: 40px;
+    line-height: 30px;
+}
+
+ul li.item-menu .txt-link{
+    margin-left: 80px;
+    font-size: 1.2em;
+    transition: 1s;
+    opacity: 0;
+}
+
+ul li.item-menu-second .txt-link{
+    margin-left: 80px;
+    font-size: 1em;
+    transition: 1s;
+    opacity: 0;
+}
+
+nav.menu-lateral.expandir .txt-link{
+    margin-left: 40px;
+    opacity: 1;
+}
+
+ul li.item-menu .icon{
+    font-size: 2em;
+}
+
+ul li.item-menu-second .icon{
+    font-size: 1.8em;
+}
+
