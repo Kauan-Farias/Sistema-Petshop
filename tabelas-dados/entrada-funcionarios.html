@@ -7,35 +7,86 @@
     <link rel="stylesheet" href="../estilos/tabela.css">
     <link rel="stylesheet" href="../estilos/geral.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+    <link rel="stylesheet" href="../estilos/menu.css">
     <title>Dados dos Cliente</title>
 </head>
 <body>
-    <header>
-        <span id="hamburger-menu" class="material-symbols-outlined" onclick="menu()">menu</span>
-    </header>
-    <nav class="menu-hide">
-        <h2>Pet Happy<span class="material-symbols-outlined">pets</span></h2>
-        <div id="itens">
-            <ul>
-                <li><span class="material-symbols-outlined">home</span><a href="#">Início</a></li>
-                <li onclick="areaDados1()"><span class="material-symbols-outlined">groups</span><a href="#">Clientes</a></li>
-                <ul id="cadastrar-dados1">
-                    <li><a href="../cadastros/Cadastro-client.html">Cadastrar</a></li>
-                    <li><a href="../tabelas-dados/entrada-client.html">Dados</a></li>
-                </ul>
-                <li onclick="areaDados2()"><span class="material-symbols-outlined">pets</span><a href="#">Pets</a></li>
-                <ul id="cadastrar-dados2">
-                    <li><a href="#">Cadastrar</a></li>
-                    <li><a href="#">Dados</a></li>
-                </ul>
-                <li onclick="areaDados3()"><span class="material-symbols-outlined">group</span><a href="#">Serviços</a></li>
-                <ul id="cadastrar-dados3">
-                    <li><a href="entrada-servicos.html">Cadastrar</a></li>
-                    <li><a href="../tabelas-dados/entrada-servicos.html">Dados</a></li>
-                </ul>
-                <li class="select"><span class="material-symbols-outlined">Badge</span><a href="#">Funcionários</a></li>
-            </ul>
+    <nav class="menu-lateral">
+        <div class="btn-expandir">
+            <span class="material-symbols-outlined" id="btn-exp">menu</span>
         </div>
+        
+        <ul>
+            <li class="item-menu">
+                <a href="../index.html">
+                    <span class="material-symbols-outlined icon" id>home</span>
+                    <span class="txt-link">Início</span>
+                </a>
+            </li>
+  
+            <li class="item-menu" onclick="areaHide1()">
+                <a href="#">
+                    <span class="material-symbols-outlined icon">person</span>
+                    <span class="txt-link">Cliente</span>
+                </a>
+            </li>
+          <div class="item-hide1">  
+              <li class="item-menu-second">
+                  <a href="#">
+                      <span class="material-symbols-outlined icon">person</span>
+                      <span class="txt-link">Cadastrar</span>
+                  </a>
+              </li>
+              <li class="item-menu-second">
+                  <a href="#">
+                      <span class="material-symbols-outlined icon">account_balance_wallet</span>
+                      <span class="txt-link">Dados</span>
+                  </a>
+              </li>
+          </div>
+  
+            <li class="item-menu" onclick="areaHide2()">
+                <a href="#">
+                    <span class="material-symbols-outlined icon">pets</span>
+                    <span class="txt-link">Pets</span>
+                </a>
+            </li>
+            <div class="item-hide2">  
+                <li class="item-menu-second">
+                    <a href="#">
+                        <span class="material-symbols-outlined icon">pets</span>
+                        <span class="txt-link">Cadastrar</span>
+                    </a>
+                </li>
+                <li class="item-menu-second">
+                    <a href="#">
+                        <span class="material-symbols-outlined icon">account_balance_wallet</span>
+                        <span class="txt-link">Dados</span>
+                    </a>
+                </li>
+            </div>
+  
+            <li class="item-menu ativo" onclick="areaHide3()">
+                <a href="#">
+                    <span class="material-symbols-outlined icon">group</span>
+                    <span class="txt-link">Funcionários</span>
+                </a>
+            </li>
+            <div class="item-hide3">  
+                <li class="item-menu-second">
+                    <a href="../cadastros/Cadastro-funcionario.html">
+                        <span class="material-symbols-outlined icon">group</span>
+                        <span class="txt-link">Cadastrar</span>
+                    </a>
+                </li>
+                <li class="item-menu-second ativo">
+                    <a href="#">
+                        <span class="material-symbols-outlined icon">account_balance_wallet</span>
+                        <span class="txt-link">Dados</span>
+                    </a>
+                </li>
+            </div>
+        </ul>  
     </nav>
     <table>
         <thead>
@@ -103,5 +154,6 @@
         </tbody>
     </table>
     <script src="../interações/tabela.js"></script>
+    <script src="../interações/menu.js"></script>
 </body>
 </html>
