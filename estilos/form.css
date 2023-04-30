@@ -30,6 +30,7 @@ form{
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.465);
     background-color: var(--cor-principal);
     transition: width 1.5s;
+    z-index: 0;
 }
 
 div#imagebk{

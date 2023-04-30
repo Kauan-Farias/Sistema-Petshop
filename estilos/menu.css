@@ -19,6 +19,7 @@ nav.menu-lateral{
     padding: 40px 0px 40px 5px;
     box-shadow: 3px 0px 0px var(--cor-secundaria);
     
+    z-index: 1;
     position: fixed;
     top: 0;
     left: 0;
