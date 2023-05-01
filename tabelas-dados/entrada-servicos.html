@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../estilos/geral.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <link rel="stylesheet" href="../estilos/menu.css">
-    <title>Happy Pet | Dados dos funcionários</title>
+    <title>Happy Pet | Dados dos serviços</title>
 </head>
 <body>
     <nav class="menu-lateral">
@@ -46,7 +46,7 @@
                 </li>
             </div>
 
-            <li class="item-menu" onclick="areaHide2()"><!--Pets-->
+            <li class="item-menu ativo" onclick="areaHide2()"><!--Pets-->
                 <a href="#">
                     <span class="material-symbols-outlined icon">pets</span>
                     <span class="txt-link">Pets</span>
@@ -59,15 +59,15 @@
                         <span class="txt-link">Cadastrar</span>
                     </a>
                 </li>
-                <li class="item-menu-second"><!--Pets Dados-->
-                    <a href="../tabelas-dados/entrada-servicos.html">
+                <li class="item-menu-second ativo"><!--Pets Dados-->
+                    <a href="#">
                         <span class="material-symbols-outlined icon">account_balance_wallet</span>
                         <span class="txt-link">Dados</span>
                     </a>
                 </li>
             </div>
 
-            <li class="item-menu ativo" onclick="areaHide3()"><!--Funcionários-->
+            <li class="item-menu" onclick="areaHide3()"><!--Funcionários-->
                 <a href="#">
                     <span class="material-symbols-outlined icon">group</span>
                     <span class="txt-link">Funcionários</span>
@@ -80,8 +80,8 @@
                         <span class="txt-link">Cadastrar</span>
                     </a>
                 </li>
-                <li class="item-menu-second ativo">
-                    <a href="#"><!--Funcionários Dados-->
+                <li class="item-menu-second">
+                    <a href="../tabelas-dados/entrada-funcionarios.html"><!--Funcionários Dados-->
                         <span class="material-symbols-outlined icon">account_balance_wallet</span>
                         <span class="txt-link">Dados</span>
                     </a>
@@ -92,83 +92,68 @@
     <table>
         <thead>
             <caption>
-                Entrada de dados dos funcionarios
+                Entrada de dados dos serviços
             </caption>
             <tr>
-                <th>Nome</th>
-                <th>Cpf</th>
-                <th>Cep</th>
-                <th>Endereço</th>
-                <th>Nascimento</th>
-                <th>Telefone</th>
-                <th>Editar</th>
-                <th>Excluir</th>
+                <th>Dono</th>
+                <th>Porte</th>
+                <th>Sexo</th>
+                <th>Agendamento</th>
+                <th>Serviço</th>
+                <th>Profissional</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Erick Gonçalves De Matos</td>
-                <td>000.000.000-00</td>
-                <td>00000-000</td>
-                <td>Avenida Central 1085</td>
+                <td>Ana luisa Pereira</td>
+                <td>P</td>
+                <td>F</td>
                 <td>00/00/0000</td>
-                <td>(00) 00000-0000</td>
-                <td><span class="material-symbols-outlined editar">edit</span></td>
-                <td><span class="material-symbols-outlined excluir">delete</span></td>
+                <td>Banho</td>
+                <td>Erick Gonçalves</td>
             </tr>
             <tr>
-                <td>George Souza Daniel</td>
-                <td>000.000.000-00</td>
-                <td>00000-000</td>
-                <td>Avenida Central 1075</td>
+                <td>Kauan Farias</td>
+                <td>M</td>
+                <td>M</td>
                 <td>00/00/0000</td>
-                <td>(00) 00000-0000</td>
-                <td><span class="material-symbols-outlined editar">edit</span></td>
-                <td><span class="material-symbols-outlined excluir">delete</span></td>
+                <td>Banho</td>
+                <td>Erick Gonçalves</td>
             </tr>
             <tr>
-                <td>Katarina Pereira Da Silva</td>
-                <td>000.000.000-00</td>
-                <td>00000-000</td>
-                <td>Avenida Central 1065</td>
+                <td>Eva Daniel</td>
+                <td>GG</td>
+                <td>F</td>
                 <td>00/00/0000</td>
-                <td>(00) 00000-0000</td>
-                <td><span class="material-symbols-outlined editar">edit</span></td>
-                <td><span class="material-symbols-outlined excluir">delete</span></td>
+                <td>Consulta veterinária</td>
+                <td>George Souza</td>
             </tr>
             <tr>
-                <td>Carlos Herinque Miguel</td>
-                <td>000.000.000-00</td>
-                <td>00000-000</td>
-                <td>Avenida Central 1055</td>
+                <td>Kleber Antonio</td>
+                <td>P</td>
+                <td>M</td>
                 <td>00/00/0000</td>
-                <td>(00) 00000-0000</td>
-                <td><span class="material-symbols-outlined editar">edit</span></td>
-                <td><span class="material-symbols-outlined excluir">delete</span></td>
+                <td>Consulta veterinária</td>
+                <td>George Souza</td>
             </tr>
             <tr>
-                <td>Camila Suarez Da Silva</td>
-                <td>000.000.000-00</td>
-                <td>00000-000</td>
-                <td>Avenida Central 1045</td>
+                <td>Tatiane Araujo</td>
+                <td>P</td>
+                <td>F</td>
                 <td>00/00/0000</td>
-                <td>(00) 00000-0000</td>
-                <td><span class="material-symbols-outlined editar">edit</span></td>
-                <td><span class="material-symbols-outlined excluir">delete</span></td>
+                <td>Tosa</td>
+                <td>Katarina Pereira</td>
             </tr>
             <tr>
-                <td>Raphaela Miguel Do Santos</td>
-                <td>000.000.000-00</td>
-                <td>00000-000</td>
-                <td>Avenida Central 1035</td>
+                <td>Claudia Raia</td>
+                <td>P</td>
+                <td>M</td>
                 <td>00/00/0000</td>
-                <td>(00) 00000-0000</td>
-                <td><span class="material-symbols-outlined editar">edit</span></td>
-                <td><span class="material-symbols-outlined excluir">delete</span></td>
-            </tr>
+                <td>Banho</td>
+                <td>Erick Gonçalves</td>
+            </tr> 
         </tbody>
     </table>
     <script src="../interações/tabela.js"></script>
-    <script src="../interações/menu.js"></script>
 </body>
 </html>
