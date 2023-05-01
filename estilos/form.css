@@ -154,7 +154,7 @@ input.enviar:hover{
     background-color: var(--cor-principal);
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.400);
     border-radius: 10px;
-    width: 142px;
+    width: 144px;
     padding: 10px;
     margin: auto;
 }
