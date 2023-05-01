@@ -6,6 +6,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*Tabela*/
 table{
     position: relative;
     border-collapse: collapse;
@@ -42,6 +43,21 @@ th{
 tr:nth-child(odd){
     background-color:var(--cor-principal);
 }
+/*Tabela*/
+
+/*Editar e Excluir*/
+span.editar, span.excluir{
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 4px;
+    transition: 0.4s;
+}
+
+span.editar:hover, span.excluir:hover{
+    padding: 5px;
+}
+/*Editar e Excluir*/
 
 
 
