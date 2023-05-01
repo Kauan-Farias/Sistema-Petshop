@@ -9,85 +9,85 @@
     <link rel="stylesheet" href="../estilos/geral.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <link rel="stylesheet" href="../estilos/menu.css">
-    <title>Happy Pet</title>
+    <title>Happy Pet | Cadastrar funcionário</title>
 </head>
 <body>
-    <nav class="menu-lateral">
-      <div class="btn-expandir">
-          <span class="material-symbols-outlined" id="btn-exp">menu</span>
-      </div>
-      
-      <ul>
-          <li class="item-menu">
-              <a href="../index.html">
-                  <span class="material-symbols-outlined icon" id>home</span>
-                  <span class="txt-link">Início</span>
-              </a>
-          </li>
+  <nav class="menu-lateral">
+    <div class="btn-expandir">
+        <span class="material-symbols-outlined" id="btn-exp">menu</span>
+    </div>
+    
+    <ul> <!--Home-->
+        <li class="item-menu">
+            <a href="../index.html">
+                <span class="material-symbols-outlined icon" id>home</span>
+                <span class="txt-link">Início</span>
+            </a>
+        </li>
 
-          <li class="item-menu" onclick="areaHide1()">
-              <a href="#">
+        <li class="item-menu" onclick="areaHide1()"><!--Clientes-->
+            <a href="#">
+                <span class="material-symbols-outlined icon">person</span>
+                <span class="txt-link">Cliente</span>
+            </a>
+        </li>
+      <div class="item-hide1">  
+          <li class="item-menu-second"><!--Clientes Cadastro-->
+              <a href="../cadastros/Cadastro-client.html">
                   <span class="material-symbols-outlined icon">person</span>
-                  <span class="txt-link">Cliente</span>
+                  <span class="txt-link">Cadastrar</span>
               </a>
           </li>
-        <div class="item-hide1">  
-            <li class="item-menu-second">
-                <a href="#">
-                    <span class="material-symbols-outlined icon">person</span>
+          <li class="item-menu-second"><!--Clientes Dados-->
+              <a href="../tabelas-dados/entrada-client.html">
+                  <span class="material-symbols-outlined icon">account_balance_wallet</span>
+                  <span class="txt-link">Dados</span>
+              </a>
+          </li>
+      </div>
+
+        <li class="item-menu" onclick="areaHide2()"><!--Pets-->
+            <a href="#">
+                <span class="material-symbols-outlined icon">pets</span>
+                <span class="txt-link">Pets</span>
+            </a>
+        </li>
+        <div class="item-hide2">  
+            <li class="item-menu-second"><!--Pets Cadastro-->
+                <a href="../cadastros/Cadastro-servico.html">
+                    <span class="material-symbols-outlined icon">pets</span>
                     <span class="txt-link">Cadastrar</span>
                 </a>
             </li>
-            <li class="item-menu-second">
-                <a href="#">
+            <li class="item-menu-second"><!--Pets Dados-->
+                <a href="../tabelas-dados/entrada-servicos.html">
                     <span class="material-symbols-outlined icon">account_balance_wallet</span>
                     <span class="txt-link">Dados</span>
                 </a>
             </li>
         </div>
 
-          <li class="item-menu" onclick="areaHide2()">
-              <a href="#">
-                  <span class="material-symbols-outlined icon">pets</span>
-                  <span class="txt-link">Pets</span>
-              </a>
-          </li>
-          <div class="item-hide2">  
-              <li class="item-menu-second">
-                  <a href="../cadastros/Cadastro-client.html">
-                      <span class="material-symbols-outlined icon">pets</span>
-                      <span class="txt-link">Cadastrar</span>
-                  </a>
-              </li>
-              <li class="item-menu-second">
-                  <a href="#">
-                      <span class="material-symbols-outlined icon">account_balance_wallet</span>
-                      <span class="txt-link">Dados</span>
-                  </a>
-              </li>
-          </div>
-
-          <li class="item-menu ativo" onclick="areaHide3()">
-              <a href="#">
-                  <span class="material-symbols-outlined icon">group</span>
-                  <span class="txt-link">Funcionários</span>
-              </a>
-          </li>
-          <div class="item-hide3">  
-              <li class="item-menu-second ativo">
-                  <a href="#">
-                      <span class="material-symbols-outlined icon">group</span>
-                      <span class="txt-link">Cadastrar</span>
-                  </a>
-              </li>
-              <li class="item-menu-second">
-                  <a href="../tabelas-dados/entrada-funcionarios.html">
-                      <span class="material-symbols-outlined icon">account_balance_wallet</span>
-                      <span class="txt-link">Dados</span>
-                  </a>
-              </li>
-          </div>
-      </ul>  
+        <li class="item-menu ativo" onclick="areaHide3()"><!--Funcionários-->
+            <a href="#">
+                <span class="material-symbols-outlined icon">group</span>
+                <span class="txt-link">Funcionários</span>
+            </a>
+        </li>
+        <div class="item-hide3">  
+            <li class="item-menu-second ativo">
+                <a href="#"><!--Funcionários Cadastro-->
+                    <span class="material-symbols-outlined icon">group</span>
+                    <span class="txt-link">Cadastrar</span>
+                </a>
+            </li>
+            <li class="item-menu-second">
+                <a href="../tabelas-dados/entrada-funcionarios.html"><!--Funcionários Dados-->
+                    <span class="material-symbols-outlined icon">account_balance_wallet</span>
+                    <span class="txt-link">Dados</span>
+                </a>
+            </li>
+        </div>
+    </ul>  
   </nav>
   <form id="funcionario">
       <div id="cadastro-funcionario">

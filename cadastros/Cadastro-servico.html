@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/form.css">
+    <link rel="stylesheet" href="../estilos/form-mediaqueries.css">
+    <link rel="stylesheet" href="../estilos/geral.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="../estilos/menu.css">
+    <title>Happy Pet | Cadastrar serviço</title>
+</head>
+<body>
+    <nav class="menu-lateral">
+        <div class="btn-expandir">
+            <span class="material-symbols-outlined" id="btn-exp">menu</span>
+        </div>
+        
+        <ul> <!--Home-->
+            <li class="item-menu">
+                <a href="../index.html">
+                    <span class="material-symbols-outlined icon" id>home</span>
+                    <span class="txt-link">Início</span>
+                </a>
+            </li>
+
+            <li class="item-menu" onclick="areaHide1()"><!--Clientes-->
+                <a href="#">
+                    <span class="material-symbols-outlined icon">person</span>
+                    <span class="txt-link">Cliente</span>
+                </a>
+            </li>
+        <div class="item-hide1">  
+            <li class="item-menu-second"><!--Clientes Cadastro-->
+                <a href="../cadastros/Cadastro-client.html">
+                    <span class="material-symbols-outlined icon">person</span>
+                    <span class="txt-link">Cadastrar</span>
+                </a>
+            </li>
+            <li class="item-menu-second"><!--Clientes Dados-->
+                <a href="../tabelas-dados/entrada-client.html">
+                    <span class="material-symbols-outlined icon">account_balance_wallet</span>
+                    <span class="txt-link">Dados</span>
+                </a>
+            </li>
+        </div>
+
+            <li class="item-menu ativo" onclick="areaHide2()"><!--Pets-->
+                <a href="#">
+                    <span class="material-symbols-outlined icon">pets</span>
+                    <span class="txt-link">Pets</span>
+                </a>
+            </li>
+            <div class="item-hide2">  
+                <li class="item-menu-second ativo"><!--Pets Cadastro-->
+                    <a href="#">
+                        <span class="material-symbols-outlined icon">pets</span>
+                        <span class="txt-link">Cadastrar</span>
+                    </a>
+                </li>
+                <li class="item-menu-second"><!--Pets Dados-->
+                    <a href="../tabelas-dados/entrada-servicos.html">
+                        <span class="material-symbols-outlined icon">account_balance_wallet</span>
+                        <span class="txt-link">Dados</span>
+                    </a>
+                </li>
+            </div>
+
+            <li class="item-menu" onclick="areaHide3()"><!--Funcionários-->
+                <a href="#">
+                    <span class="material-symbols-outlined icon">group</span>
+                    <span class="txt-link">Funcionários</span>
+                </a>
+            </li>
+            <div class="item-hide3">  
+                <li class="item-menu-second">
+                    <a href="../cadastros/Cadastro-funcionario.html"><!--Funcionários Cadastro-->
+                        <span class="material-symbols-outlined icon">group</span>
+                        <span class="txt-link">Cadastrar</span>
+                    </a>
+                </li>
+                <li class="item-menu-second">
+                    <a href="../tabelas-dados/entrada-funcionarios.html"><!--Funcionários Dados-->
+                        <span class="material-symbols-outlined icon">account_balance_wallet</span>
+                        <span class="txt-link">Dados</span>
+                    </a>
+                </li>
+            </div>
+        </ul>  
+    </nav>
+    <form>
+        <div id="imagebk-servico">
+            <!--Imagem vai no CSS-->
+        </div>
+        <div id="cadastro-servico">
+        <h2>Serviços</h2>
+        <div class="campo">
+            <label for="name"><span class="material-symbols-outlined">sound_detection_dog_barking</span></label>
+            <input type="text" name="name" id="name" placeholder="Digite o nome do seu animal" required>
+        </div>
+
+        <div class="campo">
+            <label for="animal"><span class="material-symbols-outlined">pets</span></label>
+            <select name="animal" id="animal" required>
+                <option selected disabled>Selecione o porte do animal</option>
+                <option value="P">Pequeno</option>
+                <option value="M">Médio</option>
+                <option value="G">Grande</option>
+                <option value="GG">Gigante</option>
+            </select>
+        </div>
+
+        <div class="campo-radio">
+            <div id="sexo">
+                <label for="mas"><span class="material-symbols-outlined" id="male">male</span></label>
+                <input type="radio" name="sexo" id="mas" value="M" checked>
+                <label for="fem"><span class="material-symbols-outlined" id="female">female</span></label>
+                <input type="radio" name="sexo" id="fem" value="F">
+            </div>
+        </div>
+
+        <div class="campo">
+            <label for="data"><span class="material-symbols-outlined">calendar_month</span></label>
+            <input type="date" name="data" id="data" class="data" required>
+        </div>
+
+        <div class="campo">
+            <label for="servico"><span class="material-symbols-outlined">medical_services</span></label>
+            <select name="servico" id="servico" required>
+                <option selected disabled>Selecione o serviço</option>
+                <option value="B">Banho</option>
+                <option value="B+T">Banho + Tosa</option>
+                <option value="T">Tosa</option>
+                <option value="C">Consulta veterinária</option>
+            </select>
+        </div>
+
+        <div class="campo">
+            <label for="name"><span class="material-symbols-outlined">person</span></label>
+            <div id="funcionario">Responsável pelo serviço</div>
+        </div>
+        <input type="submit" value="Agendar" class="enviar">
+        </div>
+    </form>
+    <script src="../interações/menu.js"></script>
+</body>
+</html>
