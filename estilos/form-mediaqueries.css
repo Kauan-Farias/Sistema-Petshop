@@ -14,8 +14,8 @@
     div#imagebk{
         float: left;
         background: url(../imagens/form/tablet-background.png) no-repeat;
-        background-size: contain;
-        height: 670px;
+        background-size: cover;
+        height: 470px;
         width: 50%;
     }
 
@@ -50,7 +50,7 @@
 
 @media screen and (min-width:1281px) {
     form{
-        width: 1200px;
+        width: 1000px;
     }
 
     form#login{
@@ -67,7 +67,7 @@
         background: url(../imagens/form/desktop-background.png) no-repeat center center;
         background-size: cover;
         margin-bottom: -5px;
-        height: 660px;
+        height: 470px;
         width: 60%;
     }
 
