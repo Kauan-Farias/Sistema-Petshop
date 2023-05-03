@@ -50,6 +50,7 @@ nav.menu-lateral > ul{
 
 ul li.item-menu{
     transition: 0.5s;
+    margin-left: -5px;
 }
 
 ul li.item-menu-second{
@@ -116,8 +117,10 @@ nav.menu-lateral.expandir .txt-link{
 
 ul li.item-menu .icon{
     font-size: 2em;
+    margin: 5px;
 }
 
 ul li.item-menu-second .icon{
-    font-size: 1.8em;
+    font-size: 1.5em;
+    margin: 5px;
 }
