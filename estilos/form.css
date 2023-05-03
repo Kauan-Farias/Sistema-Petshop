@@ -60,18 +60,6 @@ div#cadastro-servico, div#cadastro-funcionario , div#cadastro, div#entrar{
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.400);
 }
 
-.camposenha{
-    margin-top: 60px;
-}
-
-.camposenha-entrar{
-    margin: 0px;
-}
-
-.camposenha-entrar .campo{
-    margin: 0px auto 20px;
-}
-
 div#esqueci-senha a{
     display: block;
     text-align: right;
