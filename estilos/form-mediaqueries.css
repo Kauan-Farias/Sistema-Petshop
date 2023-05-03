@@ -28,9 +28,9 @@
     
     div#imagebk-servico{
         float: left;
-        background: url(../imagens/form/tablet-background-servico.png) no-repeat;
-        background-size: contain;
-        height: 600px;
+        background: url(../imagens/form/tablet-background-servico.png) no-repeat bottom center;
+        background-size: cover;
+        height: 500px;
         width: 50%;
     }
 
@@ -80,9 +80,9 @@
     
     div#imagebk-servico{
         float: left;
-        background: url(../imagens/form/desktop-background-servico.png) no-repeat center center;
+        background: url(../imagens/form/desktop-background-servico.png) no-repeat bottom center;
         background-size: cover;
-        height: 600px;
+        height: 500px;
         width: 60%;
     }
 
