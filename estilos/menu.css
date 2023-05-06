@@ -24,7 +24,12 @@ nav.menu-lateral{
     top: 0;
     left: 0;
     overflow: hidden;
+    overflow-y: scroll;
     transition: 0.5s;
+}
+
+nav.menu-lateral::-webkit-scrollbar{
+    display: none;
 }
 
 nav.menu-lateral.expandir{
