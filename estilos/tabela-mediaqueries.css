@@ -3,3 +3,9 @@
         width: 900px;
     }
 }
+
+@media screen and (min-width:1281px){
+    table.wid-table{
+        width: 1000px;
+    }
+}

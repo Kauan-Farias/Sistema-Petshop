@@ -11,10 +11,11 @@ table{
     position: relative;
     border-collapse: collapse;
     margin: 50px auto;
+    transition: 1s;
 }
 
 caption{
-    padding: 5px;
+    padding: 15px;
     font-size: 1.5em;
     border-radius: 10px 10px 0px 0px;
     border: 1px solid black;
@@ -42,6 +43,14 @@ th{
 
 tr:nth-child(odd){
     background-color:var(--cor-principal);
+}
+
+tr:nth-child(odd):hover{
+    background-color: var(--cor-terciaria);
+}
+
+tr:nth-child(even):hover{
+    background-color: rgb(207, 207, 207);
 }
 /*Tabela*/
 
