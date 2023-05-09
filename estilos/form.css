@@ -60,14 +60,6 @@ div#cadastro-servico, div#cadastro-funcionario , div#cadastro, div#entrar{
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.400);
 }
 
-div#esqueci-senha a{
-    display: block;
-    text-align: right;
-    margin: 0px 20px 5px 0px;
-    font-size: 0.8em;
-    color: var(--cor-secundaria);
-}
-
 .campo > input{
     position: relative;
     padding: 10px;
