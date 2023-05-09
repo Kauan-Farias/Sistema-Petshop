@@ -108,8 +108,8 @@ div#cadastro-servico, div#cadastro-funcionario , div#cadastro, div#entrar{
     background-size: cover;
 }
 
-
-input.enviar{
+/*enviar == butão o input para enviar dados*/
+.enviar{
     display: block;
     background-color: var(--cor-principal);
     color: var(--cor-secundaria);
@@ -125,7 +125,7 @@ input.enviar{
     transition: 1.5s;
 }
 
-input.enviar:hover{
+.enviar:hover{
     width: 190px;
     padding: 12px;
 } 
