@@ -20,6 +20,11 @@ form{
     width: 300px;
 }
 
+.enviar > a{
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+
 div#esqueci-senha a{
     position: relative;
     display: block;

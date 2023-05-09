@@ -4,7 +4,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-::-webkit-scrollbar{
+body::-webkit-scrollbar{
     display: none;
 }
 
@@ -126,8 +126,9 @@ div#cadastro-servico, div#cadastro-funcionario , div#cadastro, div#entrar{
 }
 
 .enviar:hover{
-    width: 190px;
-    padding: 12px;
+    width: 185px;
+    padding: 11px;
+    font-size: 1.2em;
 } 
 
 .campo-radio{
