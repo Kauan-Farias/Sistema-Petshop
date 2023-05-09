@@ -27,7 +27,7 @@ form{
     margin: 50px auto;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.465);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.315);
     background-color: var(--cor-principal);
     transition: width 1.5s;
     z-index: 0;
@@ -119,15 +119,15 @@ input.enviar{
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.470);
     border: none;
     padding: 10px;
-    width: 200px;
+    width: 180px;
     margin: 10px auto;
     position: relative;
     transition: 1.5s;
 }
 
 input.enviar:hover{
-    transform: translate(-5px, -5px);
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.500);
+    width: 190px;
+    padding: 12px;
 } 
 
 .campo-radio{
