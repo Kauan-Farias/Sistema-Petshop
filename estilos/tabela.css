@@ -21,7 +21,7 @@ caption{
     border: 1px solid black;
     border-bottom: 0px;
     color: white;
-    background-color:rgb(123, 123, 216);
+    background-color: var(--cor-principal);
 }
 
 tr{

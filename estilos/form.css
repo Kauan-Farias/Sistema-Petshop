@@ -12,7 +12,7 @@
 
 h2{
     background-color:   var(--cor-secundaria);
-    color: rgb(115, 115, 184);
+    color: var(--cor-principal);
     padding: 10px;
     width: 200px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.352);
@@ -52,7 +52,7 @@ div#cadastro-servico, div#cadastro-funcionario , div#cadastro, div#entrar{
 
 /*campo*/
 .campo{
-    background-color: var(--cor-terciaria);
+    background-color: var(--cor-principal);
     display: block;
     margin: 20px auto;
     border-radius: 15px;
@@ -119,7 +119,7 @@ div#esqueci-senha a{
 
 input.enviar{
     display: block;
-    background-color: var(--cor-terciaria);
+    background-color: var(--cor-principal);
     color: var(--cor-secundaria);
     cursor: pointer;
     font-size: 1em;

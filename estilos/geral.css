@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 :root{
-    --cor-principal:  rgb(123, 123, 216);
-    --cor-secundaria: #fdcc2d;
-    --cor-terciaria: rgb(85, 85, 225);
+    --cor-principal:  #58a4c4;
+    --cor-secundaria: #ffc98c;
+    --cor-terciaria: #58a4c4;
 }
