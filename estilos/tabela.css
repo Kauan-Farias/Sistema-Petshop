@@ -6,10 +6,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body::-webkit-scrollbar{
-    display: none;
-}
-
 /*Tabela*/
 table{
     position: relative;

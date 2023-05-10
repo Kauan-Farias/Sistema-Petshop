@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+body::-webkit-scrollbar{
+    display: none;
+}
+
 :root{
     --cor-principal:  #00A6C7;
     --cor-secundaria: #FFC98A;
