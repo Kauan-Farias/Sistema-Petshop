@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -39,7 +40,7 @@
                     </a>
                 </li>
                 <li class="item-menu-second"><!--Clientes Dados-->
-                    <a href="../tabelas-dados/entrada-clientes.html">
+                    <a href="../tabelas-dados/entrada-clientes.php">
                         <span class="icon"><i class="bi bi-person-vcard-fill"></i></span>
                         <span class="txt-link">Dados</span>
                     </a>
@@ -81,7 +82,7 @@
                     </a>
                 </li>
                 <li class="item-menu-second">
-                    <a href="../tabelas-dados/entrada-funcionarios.html"><!--Funcionários Dados-->
+                    <a href="../tabelas-dados/entrada-funcionarios.php"><!--Funcionários Dados-->
                         <span class="icon"><i class="bi bi-person-vcard-fill"></i></span>
                         <span class="txt-link">Dados</span>
                     </a>

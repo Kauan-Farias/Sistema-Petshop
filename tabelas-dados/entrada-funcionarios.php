@@ -40,7 +40,7 @@
                     </a>
                 </li>
                 <li class="item-menu-second"><!--Clientes Dados-->
-                    <a href="../tabelas-dados/entrada-clientes.html">
+                    <a href="../tabelas-dados/entrada-clientes.php">
                         <span class="icon"><i class="bi bi-person-vcard-fill"></i></span>
                         <span class="txt-link">Dados</span>
                     </a>
@@ -61,7 +61,7 @@
                     </a>
                 </li>
                 <li class="item-menu-second"><!--Pets Dados-->
-                    <a href="../tabelas-dados/entrada-pets.html">
+                    <a href="../tabelas-dados/entrada-pets.php">
                         <span class="material-symbols-outlined icon">account_balance_wallet</span>
                         <span class="txt-link">Dados</span>
                     </a>
