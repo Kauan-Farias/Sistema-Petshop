@@ -40,7 +40,7 @@
               </a>
           </li>
           <li class="item-menu-second"><!--Clientes Dados-->
-              <a href="../tabelas-dados/entrada-clientes.html">
+              <a href="../tabelas-dados/entrada-clientes.php">
                 <span class="icon"><i class="bi bi-person-vcard-fill"></i></span>
                 <span class="txt-link">Dados</span>
               </a>
@@ -55,13 +55,13 @@
         </li>
         <div class="item-hide2">  
             <li class="item-menu-second"><!--Pets Cadastro-->
-                <a href="../cadastros/Cadastro-pet.html">
+                <a href="../cadastros/Cadastro-pet.php">
                     <span class="material-symbols-outlined icon">pets</span>
                     <span class="txt-link">Cadastrar</span>
                 </a>
             </li>
             <li class="item-menu-second"><!--Pets Dados-->
-                <a href="../tabelas-dados/entrada-pets.html">
+                <a href="../tabelas-dados/entrada-pets.php">
                     <span class="material-symbols-outlined icon">account_balance_wallet</span>
                     <span class="txt-link">Dados</span>
                 </a>
@@ -76,13 +76,13 @@
         </li>
         <div class="item-hide3">  
             <li class="item-menu-second">
-                <a href="../cadastros/Cadastro-funcionario.html"><!--Funcionários Cadastro-->
+                <a href="../cadastros/Cadastro-funcionario.php"><!--Funcionários Cadastro-->
                     <span class="icon"><i class="bi bi-person-fill-add"></i></span>
                     <span class="txt-link">Cadastrar</span>
                 </a>
             </li>
             <li class="item-menu-second">
-                <a href="../tabelas-dados/entrada-funcionarios.html"><!--Funcionários Dados-->
+                <a href="../tabelas-dados/entrada-funcionarios.php"><!--Funcionários Dados-->
                     <span class="icon"><i class="bi bi-person-vcard-fill"></i></span>
                     <span class="txt-link">Dados</span>
                 </a>
