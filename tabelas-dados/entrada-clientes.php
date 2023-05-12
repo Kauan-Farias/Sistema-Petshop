@@ -20,7 +20,7 @@
 
     <ul> <!--Home-->
         <li class="item-menu">
-            <a href="../home.html">
+            <a href="../home.php">
                 <span class="icon"><i class="bi bi-house-door-fill"></i></span>
                 <span class="txt-link">Início</span>
             </a>
@@ -34,7 +34,7 @@
         </li>
         <div class="item-hide1">  
             <li class="item-menu-second"><!--Clientes Cadastro-->
-                <a href="../cadastros/Cadastro-cliente.html">
+                <a href="../cadastros/Cadastro-cliente.php">
                     <span class="icon"><i class="bi bi-person-fill-add"></i></span>
                     <span class="txt-link">Cadastrar</span>
                 </a>
@@ -55,7 +55,7 @@
         </li>
         <div class="item-hide2">  
             <li class="item-menu-second"><!--Pets Cadastro-->
-                <a href="../cadastros/Cadastro-pet.html">
+                <a href="../cadastros/Cadastro-pet.php">
                     <span class="material-symbols-outlined icon">pets</span>
                     <span class="txt-link">Cadastrar</span>
                 </a>
@@ -76,7 +76,7 @@
         </li>
         <div class="item-hide3">  
             <li class="item-menu-second">
-                <a href="../cadastros/Cadastro-funcionario.html"><!--Funcionários Cadastro-->
+                <a href="../cadastros/Cadastro-funcionario.php"><!--Funcionários Cadastro-->
                     <span class="icon"><i class="bi bi-person-fill-add"></i></span>
                     <span class="txt-link">Cadastrar</span>
                 </a>

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../estilos/form-mediaqueries.css">
     <link rel="stylesheet" href="../estilos/geral.css">
     <link rel="stylesheet" href="../estilos/menu.css">
-    <title>Happy Pet | Cadastrar Cliente</title>
+    <title>Happy Pet | Cadastrar funcionário</title>
 </head>
 <body>
   <nav class="menu-lateral">
@@ -20,21 +20,21 @@
     
     <ul> <!--Home-->
         <li class="item-menu">
-            <a href="../home.html">
+            <a href="../home.php">
                 <span class="icon"><i class="bi bi-house-door-fill"></i></span>
                 <span class="txt-link">Início</span>
             </a>
         </li>
 
-        <li class="item-menu ativo" onclick="areaHide1()"><!--Clientes-->
+        <li class="item-menu" onclick="areaHide1()"><!--Clientes-->
             <a href="#">
                 <span class="icon"><i class="bi bi-person-fill"></i></span>
                 <span class="txt-link">Cliente</span>
             </a>
         </li>
       <div class="item-hide1">  
-          <li class="item-menu-second ativo"><!--Clientes Cadastro-->
-              <a href="#">
+          <li class="item-menu-second"><!--Clientes Cadastro-->
+              <a href="../cadastros/Cadastro-cliente.php">
                 <span class="icon"><i class="bi bi-person-fill-add"></i></span>
                 <span class="txt-link">Cadastrar</span>
               </a>
@@ -55,7 +55,7 @@
         </li>
         <div class="item-hide2">  
             <li class="item-menu-second"><!--Pets Cadastro-->
-                <a href="../cadastros/Cadastro-pet.html">
+                <a href="../cadastros/Cadastro-pet.php">
                     <span class="material-symbols-outlined icon">pets</span>
                     <span class="txt-link">Cadastrar</span>
                 </a>
@@ -68,15 +68,15 @@
             </li>
         </div>
 
-        <li class="item-menu" onclick="areaHide3()"><!--Funcionários-->
+        <li class="item-menu ativo" onclick="areaHide3()"><!--Funcionários-->
             <a href="#">
                 <span class="icon"><i class="bi bi-people-fill"></i></span>
                 <span class="txt-link">Funcionários</span>
             </a>
         </li>
         <div class="item-hide3">  
-            <li class="item-menu-second">
-                <a href="../cadastros/Cadastro-funcionario.html"><!--Funcionários Cadastro-->
+            <li class="item-menu-second ativo">
+                <a href="#"><!--Funcionários Cadastro-->
                     <span class="icon"><i class="bi bi-person-fill-add"></i></span>
                     <span class="txt-link">Cadastrar</span>
                 </a>
@@ -90,25 +90,32 @@
         </div>
     </ul>  
   </nav>
-  <form action="../tabelas-dados/entrada-clientes.php" method="get">
-      <div id="imagebk">
-        <!--Imagem vai no CSS-->
-      </div>
-      <div id="cadastro">
-        <h2>Cadastrar Clientes</h2>
+  <form id="funcionario" action="../tabelas-dados/entrada-funcionarios.php" method="post">
+      <div id="cadastro-funcionario">
+        <h2>Cadastrar Funcionario</h2>
           <div class="campo">
             <label for="name"><span class="material-symbols-outlined">person</span></label>
-            <input type="text" name="name" id="name" placeholder="Digite o nome e sobrenome do cliente" required>   
+            <input type="text" name="name" id="name" class="name" placeholder="Digite o nome completo do funcionário" required>   
           </div>
 
           <div class="campo">
             <label for="cpf"><span class="material-symbols-outlined">person</span></label>
-            <input type="text" name="cpf" id="cpf" class="cpf" placeholder="Digite o CPF do cliente" required>
+            <input type="text" name="cpf" id="cpf" class="cpf" placeholder="Digite o CPF do funcionário" required>
+          </div>
+          
+          <div class="campo">
+            <label for="cep"><span class="material-symbols-outlined">home</span></label>
+            <input type="text" name="cep" id="cep" class="cep" placeholder="Digite o CEP do funcionário" required>   
           </div>
 
           <div class="campo">
-            <label for="email"><span class="material-symbols-outlined">mail</span></label>
-            <input type="email" name="email" id="email" placeholder="Digite o e-mail do cliente" required>
+            <label for="address"><span class="material-symbols-outlined">home</span></label>
+            <input type="text" name="address" id="address" placeholder="Digite o endereço do funcionário">
+        </div>
+
+          <div class="campo">
+            <label for="data-nascimento"><span class="material-symbols-outlined">calendar_month</span></label>
+            <input type="date" name="data-nascimento" id="data-nascimento" class="place" required>
           </div>
 
           <div class="campo">
@@ -117,10 +124,10 @@
           </div>
 
           <div class="campo">
-            <label for="aniversario"><span class="material-symbols-outlined">calendar_month</span></label>
-            <input type="date" name="aniversario" id="aniversario">
+            <label for="area"><span class="material-symbols-outlined">work</span></label>
+            <input type="text" name="area" id="area" placeholder="Digite a especialização do funcionário" required>
           </div>
-          <input type="submit" value="Cadastrar" class="enviar">
+          <input type="submit" value="Enviar dados" class="enviar">
       </div>
   </form>
   <!--https://igorescobar.github.io/jQuery-Mask-Plugin/docs.html-->
