@@ -7,5 +7,7 @@ body::-webkit-scrollbar{
 :root{
     --cor-principal:  #00A6C7;
     --cor-secundaria: #FFC98A;
-    --cor-terciaria: #008ca8;
+    --cor-prin-hover: #008ca8;
+    --cor-sec-hover:#fab363;
+    --cor-fonts: white;
 }

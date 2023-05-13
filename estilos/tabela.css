@@ -20,7 +20,7 @@ caption{
     border-radius: 10px 10px 0px 0px;
     border: 1px solid black;
     border-bottom: 0px;
-    color: white;
+    color: var(--cor-fonts);
     background-color: var(--cor-principal);
 }
 
@@ -38,7 +38,7 @@ th{
     position: sticky;
     background-color:var(--cor-principal);
     top: -1px;
-    color: white;
+    color: var(--cor-fonts);
 }
 
 tr:nth-child(odd){
@@ -46,7 +46,7 @@ tr:nth-child(odd){
 }
 
 tr:nth-child(odd):hover{
-    background-color: var(--cor-terciaria);
+    background-color: var(--cor-prin-hover);
 }
 
 tr:nth-child(even):hover{

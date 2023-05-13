@@ -54,6 +54,7 @@ div.container-itens a > div.itens{
 
 div.container-itens a > div.itens:hover{
     height: 168px;
+    background-color: var(--cor-sec-hover);
 }
 
 div.container-itens a > div.itens > span.icons{
@@ -61,13 +62,13 @@ div.container-itens a > div.itens > span.icons{
     align-items: center;
     justify-content: center;
     font-size: 6em;
-    color: white;
+    color: var(--cor-fonts);
     margin-bottom: 20px;
 }
 
 div.container-itens  a > div.itens > p.text{
     text-align: center;
-    color: white;
+    color: var(--cor-fonts);
     font-weight: bold;
     font-size: 1.2em;
 }

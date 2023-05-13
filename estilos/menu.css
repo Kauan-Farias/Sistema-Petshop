@@ -43,7 +43,7 @@ nav.menu-lateral.expandir{
 }
 
 .btn-expandir > span{
-    color: white;
+    color: var(--cor-fonts);
     font-size: 2em;
     cursor: pointer;
 }
@@ -84,7 +84,7 @@ ul li.item-menu-second:hover{
 }
 
 ul li.item-menu a{
-    color: white;
+    color: var(--cor-fonts);
     text-decoration: none;
     padding: 10px 5px;
     display: flex;
@@ -93,7 +93,7 @@ ul li.item-menu a{
 }
 
 ul li.item-menu-second a{
-    color: white;
+    color: var(--cor-fonts);
     text-decoration: none;
     padding: 10px 5px;
     display: flex;
