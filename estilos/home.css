@@ -1,3 +1,4 @@
+/*Header*/
 header.header-home{
     background: url(../imagens/home/imagem-backgrounde-hd.jpg) no-repeat;
     background-size: contain;
@@ -25,3 +26,49 @@ header.header-home > div.container-icones-sociais a{
 header.header-home > div.container-icones-sociais > a:hover{
     font-size: 1.7em;
 }
+/*Header*/
+/*Main*/
+div.container-itens{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 130, 130);
+}
+
+div.container-itens a{
+    text-decoration: none;
+}
+
+div.container-itens a > div.itens{
+    padding: 10px 10px 20px 10px;
+    border: 1px solid black;
+    margin: 0px 20px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: var(--cor-secundaria);
+    border: 3px solid var(--cor-principal);
+    height: 122px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 1s;
+}
+
+div.container-itens a > div.itens:hover{
+    height: 168px;
+}
+
+div.container-itens a > div.itens > span.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6em;
+    color: white;
+    margin-bottom: 20px;
+}
+
+div.container-itens  a > div.itens > p.text{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+/*Main*/
