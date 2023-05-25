@@ -1,3 +1,25 @@
+<?php
+    include '../servidor/conexao.php';
+
+    $nome_funcionario = $_POST['name_funcionario'];
+    $cpf_funcionario= $_POST['cpf_funcionario'];
+    $cep_funcionario = $_POST['cep_funcionario'];
+    $endereco_funcionario = $_POST['endereco_funcionario'];
+    $nascimento_funcionario = $_POST['nascimento_funcionario'];
+    $telefone_funcionario = $_POST['telefone_funcionario'];
+    $especializacao_funcionario = $_POST['especializacao_funcionario'];
+
+    $cadastro = $conexao->prepare("INSERT INTO `funcionario` (`nome_funcionario`, `cpf_funcionario`, `cep_funcionario`, `endereco_funcionario`, `nascimento_funcionario`, `telefone_funcionario`, `especializacao_funcionario`) VALUES ('$nome_funcionario', '$cpf_funcionario', '$cep_funcionario', '$endereco_funcionario', '$nascimento_funcionario', '$telefone_funcionario', '$especializacao_funcionario');");
+
+    $cadastro->execute();
+    if($cadastro == true){
+        echo "Cliente cadastrado com sucesso!";
+    }  else{
+        echo "Cliente não cadastrado";
+    }
+
+    $listar_funcinario = $conexao->query("SELECT * FROM `funcionario`")->fetchAll();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -108,72 +130,19 @@
             </tr>
         </thead>
         <tbody>
+            <?php foreach($listar_funcinario as $dados) { ?>
             <tr>
-                <td>Erick Gonçalves De Matos</td>
-                <td>000.000.000-00</td>
-                <td>00000-000</td>
-                <td>Avenida Central 1085</td>
-                <td>00/00/0000</td>
-                <td>(00) 00000-0000</td>
-                <td>Adestrador</td>
+                <td><?php echo $dados ['nome_funcionario'];?></td>
+                <td><?php echo $dados ['cpf_funcionario'];?></td>
+                <td><?php echo $dados ['cep_funcionario'];?></td>
+                <td><?php echo $dados ['endereco_funcionario'];?></td>
+                <td><?php echo $dados ['nascimento_funcionario'];?></td>
+                <td><?php echo $dados ['telefone_funcionario'];?></td>
+                <td><?php echo $dados ['especializacao_funcionario'];?></td>
                 <td><span class="material-symbols-outlined editar">edit</span></td>
                 <td><span class="material-symbols-outlined excluir">delete</span></td>
             </tr>
-            <tr>
-                <td>George Souza Daniel</td>
-                <td>000.000.000-00</td>
-                <td>00000-000</td>
-                <td>Avenida Central 1075</td>
-                <td>00/00/0000</td>
-                <td>(00) 00000-0000</td>
-                <td>Balconista</td>
-                <td><span class="material-symbols-outlined editar">edit</span></td>
-                <td><span class="material-symbols-outlined excluir">delete</span></td>
-            </tr>
-            <tr>
-                <td>Katarina Pereira Da Silva</td>
-                <td>000.000.000-00</td>
-                <td>00000-000</td>
-                <td>Avenida Central 1065</td>
-                <td>00/00/0000</td>
-                <td>(00) 00000-0000</td>
-                <td>Banho</td>
-                <td><span class="material-symbols-outlined editar">edit</span></td>
-                <td><span class="material-symbols-outlined excluir">delete</span></td>
-            </tr>
-            <tr>
-                <td>Carlos Herinque Miguel</td>
-                <td>000.000.000-00</td>
-                <td>00000-000</td>
-                <td>Avenida Central 1055</td>
-                <td>00/00/0000</td>
-                <td>(00) 00000-0000</td>
-                <td>Tosa</td>
-                <td><span class="material-symbols-outlined editar">edit</span></td>
-                <td><span class="material-symbols-outlined excluir">delete</span></td>
-            </tr>
-            <tr>
-                <td>Camila Suarez Da Silva</td>
-                <td>000.000.000-00</td>
-                <td>00000-000</td>
-                <td>Avenida Central 1045</td>
-                <td>00/00/0000</td>
-                <td>(00) 00000-0000</td>
-                <td>Banho e Tosa</td>
-                <td><span class="material-symbols-outlined editar">edit</span></td>
-                <td><span class="material-symbols-outlined excluir">delete</span></td>
-            </tr>
-            <tr>
-                <td>Raphaela Miguel Do Santos</td>
-                <td>000.000.000-00</td>
-                <td>00000-000</td>
-                <td>Avenida Central 1035</td>
-                <td>00/00/0000</td>
-                <td>(00) 00000-0000</td>
-                <td>Veterinário</td>
-                <td><span class="material-symbols-outlined editar">edit</span></td>
-                <td><span class="material-symbols-outlined excluir">delete</span></td>
-            </tr>
+            <?php } ?>
         </tbody>
     </table>
     <script src="../interações/tabela.js"></script>

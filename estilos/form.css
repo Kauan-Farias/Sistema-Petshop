@@ -35,13 +35,13 @@ div#imagebk{
     height: 300px;
 }
 
-div#imagebk-servico{
+div#imagebk-pet{
     background: url(../imagens/form/mobile-background-sevico.png) center center no-repeat;
     background-size: cover;
     height: 300px;
 }
 
-div#cadastro-servico, div#cadastro-funcionario , div#cadastro, div#entrar{
+div#cadastro-pet, div#cadastro-funcionario , div#cadastro, div#entrar{
     margin: 10px 0px;
 }
 /*form*/

@@ -31,8 +31,8 @@ header.header-home > div.container-icones-sociais > a:hover{
 div.container-itens{
     display: flex;
     justify-content: center;
+    margin-top: 10%;
     align-items: center;
-    background: rgb(255, 130, 130);
 }
 
 div.container-itens a{
@@ -40,20 +40,20 @@ div.container-itens a{
 }
 
 div.container-itens a > div.itens{
-    padding: 10px 10px 20px 10px;
+    padding: 20px;
     border: 1px solid black;
     margin: 0px 20px;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px;
     background-color: var(--cor-secundaria);
     border: 3px solid var(--cor-principal);
-    height: 122px;
+    height: 132px;
     cursor: pointer;
     overflow: hidden;
     transition: 1s;
 }
 
 div.container-itens a > div.itens:hover{
-    height: 168px;
+    height: 172px;
     background-color: var(--cor-sec-hover);
 }
 

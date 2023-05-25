@@ -90,42 +90,42 @@
         </div>
     </ul>  
   </nav>
-  <form id="funcionario" action="../tabelas-dados/entrada-funcionarios.php" method="post">
+  <form id="funcionario" action="../tabelas-dados/entrada-funcionarios.php" method="POST">
       <div id="cadastro-funcionario">
         <h2>Cadastrar Funcionario</h2>
           <div class="campo">
             <label for="name"><span class="material-symbols-outlined">person</span></label>
-            <input type="text" name="name" id="name" class="name" placeholder="Digite o nome completo do funcionário" required>   
+            <input type="text" name="name_funcionario" id="name" class="name" placeholder="Digite o nome completo do funcionário" required>   
           </div>
 
           <div class="campo">
             <label for="cpf"><span class="material-symbols-outlined">person</span></label>
-            <input type="text" name="cpf" id="cpf" class="cpf" placeholder="Digite o CPF do funcionário" required>
+            <input type="text" name="cpf_funcionario" id="cpf" class="cpf" placeholder="Digite o CPF do funcionário" required>
           </div>
           
           <div class="campo">
             <label for="cep"><span class="material-symbols-outlined">home</span></label>
-            <input type="text" name="cep" id="cep" class="cep" placeholder="Digite o CEP do funcionário" required>   
+            <input type="text" name="cep_funcionario" id="cep" class="cep" placeholder="Digite o CEP do funcionário" required>   
           </div>
 
           <div class="campo">
             <label for="address"><span class="material-symbols-outlined">home</span></label>
-            <input type="text" name="address" id="address" placeholder="Digite o endereço do funcionário">
+            <input type="text" name="endereco_funcionario" id="address" placeholder="Digite o endereço do funcionário">
         </div>
 
           <div class="campo">
             <label for="data-nascimento"><span class="material-symbols-outlined">calendar_month</span></label>
-            <input type="date" name="data-nascimento" id="data-nascimento" class="place" required>
+            <input type="date" name="nascimento_funcionario" id="data-nascimento" class="place" required>
           </div>
 
           <div class="campo">
             <label for="phone"><span class="material-symbols-outlined">phone_iphone</span></label>
-            <input type="tel" name="phone" id="phone" class="phone" placeholder="(00) 00000-0000" required>
+            <input type="tel" name="telefone_funcionario" id="phone" class="phone" placeholder="(00) 00000-0000" required>
           </div>
 
           <div class="campo">
-            <label for="area"><span class="material-symbols-outlined">work</span></label>
-            <input type="text" name="area" id="area" placeholder="Digite a especialização do funcionário" required>
+            <label for="especializacao"><span class="material-symbols-outlined">work</span></label>
+            <input type="text" name="especializacao_funcionario" id="especializacao" placeholder="Digite a especialização do funcionário" required>
           </div>
           <input type="submit" value="Enviar dados" class="enviar">
       </div>

@@ -1,3 +1,23 @@
+<?php
+    include '../servidor/conexao.php';
+
+    $nome_cliente = $_POST['name_cliente'];
+    $cpf_cliente = $_POST['cpf_cliente'];
+    $email_cliente = $_POST['email_cliente'];
+    $telefone_cliente = $_POST['telefone_cliente'];
+    $nascimento_cliente = $_POST['nascimento_cliente'];
+
+    $cadastro = $conexao->prepare("INSERT INTO `cliente` (`nome_cliente`, `cpf_cliente`, `email_cliente`, `telefone_cliente`, `nascimento_cliente`) VALUES ('$nome_cliente', '$cpf_cliente', '$email_cliente', '$telefone_cliente', '$nascimento_cliente');");
+
+    $cadastro->execute();
+    if($cadastro == true){
+        echo "Cliente cadastrado com sucesso!";
+    }  else{
+        echo "Cliente não cadastrado";
+    }
+
+    $listar_cliente = $conexao->query("SELECT * FROM `cliente`")->fetchAll();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -106,60 +126,17 @@
             </tr>
         </thead>
         <tbody>
+            <?php foreach($listar_cliente as $dados) { ?>
             <tr>
-                <td>Ana luisa Pereira</td>
-                <td>000.000.000-00</td>
-                <td>Analu@gmail.com</td>
-                <td>(00) 00000-0000</td>
-                <td>00/00/0000</td>
+                <td><?php echo $dados ['nome_cliente'];?></td>
+                <td><?php echo $dados ['cpf_cliente'];?></td>
+                <td><?php echo $dados ['email_cliente'];?></td>
+                <td><?php echo $dados ['telefone_cliente'];?></td>
+                <td><?php echo $dados ['nascimento_cliente'];?></td>
                 <td><span class="material-symbols-outlined editar">edit</span></td>
                 <td><span class="material-symbols-outlined excluir">delete</span></td>
             </tr>
-            <tr>
-                <td>Kauan Farias</td>
-                <td>000.000.000-00</td>
-                <td>Kakau@gmail.com</td>
-                <td>(00) 00000-0000</td>
-                <td>00/00/0000</td>
-                <td><span class="material-symbols-outlined editar">edit</span></td>
-                <td><span class="material-symbols-outlined excluir">delete</span></td>
-            </tr>
-            <tr>
-                <td>Eva Daniel</td>
-                <td>000.000.000-00</td>
-                <td>Eva@gmail.com</td>
-                <td>(00) 00000-0000</td>
-                <td>00/00/0000</td>
-                <td><span class="material-symbols-outlined editar">edit</span></td>
-                <td><span class="material-symbols-outlined excluir">delete</span></td>
-            </tr>
-            <tr>
-                <td>Kleber Antonio</td>
-                <td>000.000.000-00</td>
-                <td>Kleber@gmail.com</td>
-                <td>(00) 00000-0000</td>
-                <td>00/00/0000</td>
-                <td><span class="material-symbols-outlined editar">edit</span></td>
-                <td><span class="material-symbols-outlined excluir">delete</span></td>
-            </tr>
-            <tr>
-                <td>Tatiane Araujo</td>
-                <td>000.000.000-00</td>
-                <td>Tati@gmail.com</td>
-                <td>(00) 00000-0000</td>
-                <td>00/00/0000</td>
-                <td><span class="material-symbols-outlined editar">edit</span></td>
-                <td><span class="material-symbols-outlined excluir">delete</span></td>
-            </tr>
-            <tr>
-                <td>Claudia Raia</td>
-                <td>000.000.000-00</td>
-                <td>Raia@gmail.com</td>
-                <td>(00) 00000-0000</td>
-                <td>00/00/0000</td>
-                <td><span class="material-symbols-outlined editar">edit</span></td>
-                <td><span class="material-symbols-outlined excluir">delete</span></td>
-            </tr>
+            <?php } ?>
         </tbody>
     </table>
     <script src="../interações/tabela.js"></script>

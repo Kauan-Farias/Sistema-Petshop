@@ -1,3 +1,24 @@
+<?php
+    include '../servidor/conexao.php';
+
+    $nome_pet = $_POST['name_pet'];
+    $porte_pet = $_POST['porte_pet'];
+    $raca_pet = $_POST['raca_pet'];
+    $sexo_pet = $_POST['sexo_pet'];
+    $nascimento_pet = $_POST['nascimento_pet'];
+    $id_cliente =  $_POST['id_cliente'];
+
+    $cadastro = $conexao->prepare("INSERT INTO `pet` (`nome_pet`, `porte_pet`, `raca_pet`, `sexo_pet`, `nascimento_pet`, `cliente_id_cliente`) VALUES ('$nome_pet', '$porte_pet', '$raca_pet', '$sexo_pet', '$nascimento_pet', '$id_cliente');");
+
+    $cadastro->execute();
+    if($cadastro == true){
+        echo "Cliente cadastrado com sucesso!";
+    }  else{
+        echo "Cliente não cadastrado";
+    }
+
+    $listar_pet = $conexao->query("SELECT * FROM `pet`")->fetchAll();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

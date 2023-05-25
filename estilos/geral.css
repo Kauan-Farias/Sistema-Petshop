@@ -1,10 +1,15 @@
 @charset "UTF-8";
 
+body{
+    background-color: var(--cor-bk);
+}
+
 body::-webkit-scrollbar{
     display: none;
 }
 
 :root{
+    --cor-bk: #fff0dd;
     --cor-principal:  #00A6C7;
     --cor-secundaria: #FFC98A;
     --cor-prin-hover: #008ca8;

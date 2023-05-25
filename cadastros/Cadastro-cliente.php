@@ -90,7 +90,7 @@
         </div>
     </ul>  
   </nav>
-  <form action="../tabelas-dados/entrada-clientes.php" method="post">
+  <form action="../tabelas-dados/entrada-clientes.php" method="POST">
       <div id="imagebk">
         <!--Imagem vai no CSS-->
       </div>
@@ -98,27 +98,27 @@
         <h2>Cadastrar Clientes</h2>
           <div class="campo">
             <label for="name"><span class="material-symbols-outlined">person</span></label>
-            <input type="text" name="name" id="name" placeholder="Digite o nome e sobrenome do cliente" required>   
+            <input type="text" name="name_cliente" id="name" placeholder="Digite o nome e sobrenome do cliente" required>   
           </div>
 
           <div class="campo">
             <label for="cpf"><span class="material-symbols-outlined">person</span></label>
-            <input type="text" name="cpf" id="cpf" class="cpf" placeholder="Digite o CPF do cliente" required>
+            <input type="text" name="cpf_cliente" id="cpf" class="cpf" placeholder="Digite o CPF do cliente" required>
           </div>
 
           <div class="campo">
             <label for="email"><span class="material-symbols-outlined">mail</span></label>
-            <input type="email" name="email" id="email" placeholder="Digite o e-mail do cliente" required>
+            <input type="email" name="email_cliente" id="email" placeholder="Digite o e-mail do cliente" required>
           </div>
 
           <div class="campo">
             <label for="phone"><span class="material-symbols-outlined">phone_iphone</span></label>
-            <input type="tel" name="phone" id="phone" class="phone" placeholder="(00) 00000-0000" required>
+            <input type="tel" name="telefone_cliente" id="phone" class="phone" placeholder="(00) 00000-0000" required>
           </div>
 
           <div class="campo">
             <label for="aniversario"><span class="material-symbols-outlined">calendar_month</span></label>
-            <input type="date" name="aniversario" id="aniversario">
+            <input type="date" name="nascimento_cliente" id="aniversario">
           </div>
           <input type="submit" value="Cadastrar" class="enviar">
       </div>

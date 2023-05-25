@@ -1,3 +1,7 @@
+<?php
+    include '../servidor/conexao.php';
+    $listar_cliente = $conexao->query("SELECT * FROM `cliente`")->fetchAll(); 
+    ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -90,20 +94,30 @@
             </div>
         </ul>  
     </nav>
-    <form action="../tabelas-dados/entrada-pets.php" method="post">
-        <div id="imagebk-servico">
+    <form action="../tabelas-dados/entrada-pets.php" method="POST">
+        <div id="imagebk-pet">
             <!--Imagem vai no CSS-->
         </div>
-        <div id="cadastro-servico">
+        <div id="cadastro-pet">
             <h2>Cadastrar Pet</h2>
             <div class="campo">
                 <label for="name"><span class="material-symbols-outlined">sound_detection_dog_barking</span></label>
-                <input type="text" name="name" id="name" placeholder="Nome do animal" required>
+                <input type="text" name="name_pet" id="name" placeholder="Nome do animal" required>
+            </div>
+
+            <div class="campo">
+                <label for="dono"><span class="material-symbols-outlined">person</span></label>
+                <select name="dono_pet" id="dono" required>
+                    <option selected disabled>Selecione o responsável pelo o animal</option>
+                    <?php foreach($listar_cliente as $cliente){ ?>
+                    <option value="<?php echo $cliente['id_cliente'];?>"><?php echo $cliente['nome_cliente'];?></option>
+                    <?php }?>
+                </select>
             </div>
 
             <div class="campo">
                 <label for="animal"><span class="material-symbols-outlined">pets</span></label>
-                <select name="animal" id="animal" required>
+                <select name="porte_pet" id="animal" required>
                     <option selected disabled>Selecione o porte do animal</option>
                     <option>Pequeno</option>
                     <option>Médio</option>
@@ -111,22 +125,23 @@
                     <option>Gigante</option>
                 </select>
             </div>
+
             <div class="campo">
                 <label for="raca"><span class="material-symbols-outlined">pets</span></label>
-                <input type="text" name="raca" id="raca" maxlength="20" placeholder="Raça do animal">
+                <input type="text" name="raca_pet" id="raca" maxlength="20" placeholder="Raça do animal">
             </div>
             <div class="campo-radio">
                 <div id="sexo">
                     <label for="mas"><span class="material-symbols-outlined" id="male">male</span></label>
-                    <input type="radio" name="sexo" id="mas" value="M" checked>
+                    <input type="radio" name="sexo_pet" id="mas" value="M" checked>
                     <label for="fem"><span class="material-symbols-outlined" id="female">female</span></label>
-                    <input type="radio" name="sexo" id="fem" value="F">
+                    <input type="radio" name="sexo_pet" id="fem" value="F">
                 </div>
             </div>
 
             <div class="campo">
                 <label for="data"><span class="material-symbols-outlined">calendar_month</span></label>
-                <input type="date" name="data" id="data" class="data" required>
+                <input type="date" name="nascimento_pet" id="data" class="data" required>
             </div>
         <input type="submit" value="Cadastrar" class="enviar">
         </div>
